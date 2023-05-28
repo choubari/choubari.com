@@ -2,6 +2,14 @@ import { CodingProject } from "@/types";
 
 export const CodingProjects: CodingProject[] = [
   {
+    title: "ExpressIT",
+    thumbnail: "expressit.PNG",
+    description:
+      "ExpressIT is a prototyped solution to facilitate communication between deaf and hard of hearing people with the society. I designed the brand identity and the UX / UI of the web platform which I developed and wired up with APIs and RaspberryPI.",
+    link: "https://www.linkedin.com/in/choubari/overlay/urn:li:fsd_profilePosition:(ACoAACRpBDoBWJCbwqy_EfxZYMT1oCiEk6fTmtU,1848584662)/treasury/",
+    technology: "react",
+  },
+  {
     title: "Chill Choub",
     thumbnail: "chillchoub.PNG",
     description: "🎵 Your favorite LoFi Music Player🎧",

@@ -42,3 +42,11 @@ export type CodingProject = {
   technology?: Technology;
   github?: string;
 };
+
+export type Testimonial = {
+  name: string;
+  message: string;
+  position?: string;
+  company?: string;
+  photo?: string;
+};
