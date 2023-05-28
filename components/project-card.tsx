@@ -58,7 +58,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             href={project.link}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center px-3 py-1 rounded-full bg-gradient-to-r from-accent to-vibrant-blue text-white"
+            className="inline-flex items-center px-3 py-1 rounded-full bg-gradient-to-r from-accent to-accentgrad text-white"
           >
             <FiLink className="mr-2" /> Demo
           </a>
@@ -68,7 +68,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             href={project.github}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center px-3 py-1 rounded-full bg-gradient-to-r from-accent to-vibrant-blue text-white"
+            className="inline-flex items-center px-3 py-1 rounded-full bg-gradient-to-r from-accent to-accentgrad text-white"
           >
             <FiGithub className="mr-2" /> Code
           </a>

@@ -5,7 +5,7 @@ export const Talks: Talk[] = [
     title: "Next.js 13, what's going on?",
     thumbnail: "nextjs-biztech.jpg",
     date: "May 20, 2023",
-    duration: "120 minutes",
+    duration: "120min.",
     description:
       "In this workshop, I went through Next.js 13 main features comparing to its prior versions, covering everything from the fundamentals to implementing and deploying a demo solution.",
     presentations: [
@@ -16,6 +16,7 @@ export const Talks: Talk[] = [
         video: "https://www.youtube.com/live/s4sdXK4ApKM?feature=share",
         slides:
           "https://docs.google.com/presentation/d/1fQrKxUaWN14whNxxydmua8DRrhW8etvz4cf_1CuX4EY/edit?usp=share_link",
+        demo: "https://github.com/choubari/Nextjs13-Demo-App",
         country: "🌐",
         city: "Online",
       },
@@ -25,7 +26,7 @@ export const Talks: Talk[] = [
     title: "Best Practices for Better Accessibility",
     thumbnail: "a11y-devoxxma.jpg",
     date: "October 6, 2022",
-    duration: "50 minutes",
+    duration: "50min.",
     description:
       "Accessibility is becoming crucial for any programmer to understand. Knowing how to integrate accessibility into development will be soon and should be a core skill for programmers of all types. Delivering apps to disabled people is a big responsibility. That’s why in this session, we will see how to enhance digital accessibility with best practices and universal guidelines that will help you implement it into your project.",
     presentations: [
@@ -38,7 +39,7 @@ export const Talks: Talk[] = [
         city: "Agadir",
       },
       {
-        host: "Internet Society Accessibility Standing Group",
+        host: "ISoc Accessibility Standing Group",
         hostLink: "https://www.a11ysig.org/accessniger/",
         video:
           "https://livestream.com/accounts/686369/events/10680706/videos/233733279",
@@ -53,7 +54,7 @@ export const Talks: Talk[] = [
     title: `How to make a "perfect" git commit`,
     thumbnail: "gitcommit-devoxxma.jpg",
     date: "October 5, 2022",
-    duration: "25 minutes",
+    duration: "25min.",
     description:
       "Even if perfect things don't exist, chasing perfection can play an important role to create new and improve existing workflows, optimizing them to our needs and automating recurring tasks. In this session, I will share with you how to set your pre-commit workflow, create guidelines and avoid mistakes so you can have at the end a “perfect” git commit. The session is beginner friendly, it requires some prerequisites in git.",
     presentations: [
@@ -64,6 +65,7 @@ export const Talks: Talk[] = [
           "https://docs.google.com/presentation/d/1xgV9YQSQX05gEyEvYpWzwiXRdGCeXHztN57rN3q4yec/edit?usp=share_link",
         country: "🇲🇦",
         city: "Agadir",
+        demo: "https://gist.github.com/choubari/c89b685c334939d581489c537b5bda2f",
       },
       {
         host: "Blabla Conf",
@@ -80,7 +82,7 @@ export const Talks: Talk[] = [
     title: `Introduction Game Dev`,
     thumbnail: "gamedev-ittalk.jpg",
     date: "December 2, 2021",
-    duration: "60 minutes",
+    duration: "60min.",
     description:
       "Participated in the IT Talk podcast to share my experience with Game Development in Unity, from simple academic projects to shipping my side project to the Google Play Store.",
     presentations: [
@@ -98,7 +100,7 @@ export const Talks: Talk[] = [
     title: `A Guide to Academic Report Writing with LaTeX`,
     thumbnail: "latex-ieee.jpg",
     date: "January 14, 2021",
-    duration: "120 minutes",
+    duration: "120min.",
     description:
       "Organized a LaTex Workshop for IEEE ENSIAS Students to help them explore a new way of writing and typesetting articles and reports.",
     presentations: [
@@ -117,7 +119,7 @@ export const Talks: Talk[] = [
     title: `Get started with Git & Github`,
     thumbnail: "git-ieee.jpg",
     date: "January 12, 2021",
-    duration: "120 minutes",
+    duration: "120min.",
     description:
       "Organized a Workshop for IEEE ENSIAS Students to teach them the virtual control system Git and how to use it with Github in their projects.",
     presentations: [
