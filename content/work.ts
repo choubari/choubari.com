@@ -5,7 +5,7 @@ export const CodingProjects: CodingProject[] = [
     title: "ExpressIT",
     thumbnail: "expressit.PNG",
     description:
-      "ExpressIT is a prototyped solution to facilitate communication between deaf and hard of hearing people with the society. I designed the brand identity and the UX / UI of the web platform which I developed and wired up with APIs and RaspberryPI.",
+      "A prototyped solution to communicate with deaf and hard of hearing. I contributed to brand identity, UX/UI, and web app development.",
     link: "https://www.linkedin.com/in/choubari/overlay/urn:li:fsd_profilePosition:(ACoAACRpBDoBWJCbwqy_EfxZYMT1oCiEk6fTmtU,1848584662)/treasury/",
     technology: "react",
   },
@@ -78,7 +78,7 @@ export const CodingProjects: CodingProject[] = [
     title: "Kalah",
     thumbnail: "kalah.PNG",
     description:
-      "KALAH also called MANCALA is a game that provides a board and a number of seeds or counters. The object of the is to capture more seeds than one's opponent.",
+      "KALAH or MANCALA is a game that provides a board and a number of seeds or counters. The object of the is to capture more seeds than one's opponent.",
     github: "https://github.com/choubari/KALAH-GAME",
     technology: "c",
   },
