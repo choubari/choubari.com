@@ -12,9 +12,9 @@ type TalkCardProps = {
 };
 
 const TalkCard: React.FC<TalkCardProps> = ({ talk }) => {
-  const isTextLong = talk.description.length > 200;
+  const isTextLong = talk.description.length > 150;
   const trimmedText = isTextLong
-    ? `${talk.description.substring(0, 200)}...`
+    ? `${talk.description.substring(0, 150)}...`
     : talk.description;
 
   return (
@@ -33,7 +33,7 @@ const TalkCard: React.FC<TalkCardProps> = ({ talk }) => {
           ⏱️{talk.duration}
         </div>
       </div>
-      <div className="flex-grow">
+      <div>
         <h2 className="text-lg font-bold mt-4 dark:text-light text-darker">
           {talk.title}
         </h2>
