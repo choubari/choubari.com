@@ -46,7 +46,7 @@ export type CodingProject = {
 export type Testimonial = {
   name: string;
   message: string;
-  position?: string;
+  position: string;
   company?: string;
-  photo?: string;
+  photo: string;
 };

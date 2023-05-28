@@ -2,9 +2,9 @@ import { Testimonial } from "@/types";
 
 export const Testimonials: Testimonial[] = [
   {
-    name: "Francois Souterelle",
+    name: "François Souterelle",
     message:
-      "Kawtar has a great appetite for learning and she understands fast ! During her internship at Zenpark, she successfully contributed to the development of our mobile apps.\n Kawtar also shows a very positive attitude and is genuinely happy to share her discoveries with the team.",
+      "Kawtar has a great appetite for learning and she understands fast! During her internship at Zenpark, she successfully contributed to the development of our mobile apps.\n Kawtar also shows a very positive attitude and is genuinely happy to share her discoveries with the team.",
     position: "CTO",
     company: "Zenpark",
     photo: "françois.jpg",
@@ -20,7 +20,7 @@ export const Testimonials: Testimonial[] = [
   {
     name: "Aymane Helfa",
     message:
-      "Kawtar is very talented in ux/ui design she can manage the process of creation and the workflow of both ui and also ux design i really recommend kawtar for your next project 👌🏼 !",
+      "Kawtar is very talented in ux/ui design, she can manage the process of creation and the workflow of both ui and also ux design. I really recommend kawtar for your next project 👌🏼!",
     position: "Figma community advocate & UX/UI Designer",
     company: "Orange",
     photo: "aymane.jpg",
