@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
@@ -7,10 +8,27 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
+        serif: ['Bitter', 'serif'],
+        mono: ['Roboto Mono', 'mono'],
+      },
+      colors: {
+        'light': '#f3f3f3',
+        'lighter': '#FFFFFF',
+        'dark': '#343c4c',
+        'darker': '#212733',
+        'accent': '#12c5ca',
+        'grey': '#ABABAB',
+        'vibrant-blue': '#0456f9',
+
+
+        'mineShaft': '#363636',
+        'seashell': '#F1F1F1',
+        'wafer': '#D8C9BF',
+        'silver': '#ABABAB',
+        'rawSienna': '#CF8035',
+        'iroko': '#493626',
       },
     },
   },
