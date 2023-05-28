@@ -1,4 +1,6 @@
-export const Navbar = [
+import { NavLink } from "@/types";
+
+export const Navbar: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Work", href: "/work" },
