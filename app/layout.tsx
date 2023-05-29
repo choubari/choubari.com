@@ -1,6 +1,7 @@
 import { Nav } from "@/components/nav";
 import "./globals.css";
 import { Providers } from "@/lib/provider";
+import Footer from "@/components/footer";
 
 export const metadata = {
   title: "Create Next App",
@@ -19,7 +20,7 @@ export default function RootLayout({
           <Nav />
           <div className="mx-auto lg:max-w-7xl">{children}</div>
         </Providers>
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
