@@ -21,6 +21,11 @@ export default function RootLayout({
           <div className="mx-auto lg:max-w-7xl">{children}</div>
         </Providers>
         <Footer />
+        <script
+          type="text/javascript"
+          async
+          src="https://embeds.beehiiv.com/attribution.js"
+        ></script>
       </body>
     </html>
   );
