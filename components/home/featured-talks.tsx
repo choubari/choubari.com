@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { Talks } from "@/content/talks";
 import TalkCard from "../talk-card";
+import Button from "../ui/button";
 
 export default function FeaturedTalks() {
   return (
@@ -17,13 +17,7 @@ export default function FeaturedTalks() {
           <TalkCard key={index} talk={talk} />
         ))}
       </div>
-      <div className="text-center">
-        <Link href="/talks">
-          <p className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-accent to-accentgrad text-white text-sm font-semibold">
-            View All Talks
-          </p>
-        </Link>
-      </div>
+      <Button route={"/talks"} label={"View All Talks"} />
     </div>
   );
 }

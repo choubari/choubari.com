@@ -21,6 +21,9 @@ module.exports = {
         'accent': '#12c5ca',
         'accentgrad': '#0A7679',
         'grey': '#ABABAB',
+        'orangina': '#ffa74c',
+        'rosalina': '#f86077',
+        'violina': '#b16dea',
         'vibrant-blue': '#0456f9',
 
 

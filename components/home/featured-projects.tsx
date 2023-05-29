@@ -1,6 +1,6 @@
-import Link from "next/link";
 import ProjectCard from "@/components/project-card";
 import { CodingProjects } from "@/content/work";
+import Button from "../ui/button";
 
 export default function FeaturedProjects() {
   return (
@@ -20,13 +20,7 @@ export default function FeaturedProjects() {
           <ProjectCard key={index} project={project} />
         ))}
       </div>
-      <div className="text-center">
-        <Link href="/work">
-          <p className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-accent to-accentgrad text-white text-sm font-semibold">
-            View All Projects
-          </p>
-        </Link>
-      </div>
+      <Button route={"/work"} label={"View All Projects"} />
     </div>
   );
 }

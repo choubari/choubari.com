@@ -17,7 +17,7 @@ export default function RootLayout({
       <body className="bg-light dark:bg-darker text-darker dark:text-lighter">
         <Providers>
           <Nav />
-          {children}
+          <div className="mx-auto lg:max-w-7xl">{children}</div>
         </Providers>
         {/* <Footer /> */}
       </body>

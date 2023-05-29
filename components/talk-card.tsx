@@ -24,7 +24,7 @@ const TalkCard: React.FC<TalkCardProps> = ({ talk }) => {
           <Image
             src={`/talks/${talk.thumbnail}`}
             fill
-            objectFit="cover"
+            style={{ objectFit: "cover" }}
             alt={talk.title}
             className="transition-all duration-300 ease-in-out transform group-hover:scale-110"
           />
@@ -58,7 +58,8 @@ const TalkCard: React.FC<TalkCardProps> = ({ talk }) => {
           >
             {presentation.host}
           </a>
-          , {presentation.country} {presentation.city}
+          , {presentation.country}
+          {presentation.city}
           {presentation.video && (
             <a href={presentation.video} target="_blank" rel="noreferrer">
               {" "}

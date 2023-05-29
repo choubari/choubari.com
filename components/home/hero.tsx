@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <div className="md:flex md:flew-row justify-between py-28 mx-4 md:px-20">
       <div className="basis-7/12 pr-16 bg-dark">
-        <h1 className="text-5xl pb-10 font-serif font-bold leading-tight">
+        <h1 className="text-5xl pb-10 font-serif font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-violina via-rosalina to-orangina">
           Coding & Storytelling:
           <br />
           That's what I do!
