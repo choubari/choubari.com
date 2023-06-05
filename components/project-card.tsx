@@ -1,33 +1,15 @@
 import { FiGithub, FiLink } from "react-icons/fi";
-import { TbBrandCpp, TbBrandNextjs } from "react-icons/tb";
-import { SiFlutter, SiTypescript } from "react-icons/si";
-import { FaReact, FaJava, FaUnity, FaJs } from "react-icons/fa";
-import { DiAndroid } from "react-icons/di";
-import { IoLogoIonic } from "react-icons/io";
-import { BiCodeAlt } from "react-icons/bi";
 
 import Image from "next/image";
 import { CodingProject } from "@/types";
-
-const techIconMap = {
-  javascript: <FaJs />,
-  typescript: <SiTypescript />,
-  react: <FaReact />,
-  nextjs: <TbBrandNextjs />,
-  android: <DiAndroid />,
-  ionic: <IoLogoIonic />,
-  flutter: <SiFlutter />,
-  java: <FaJava />,
-  c: <TbBrandCpp />, // This is not the C icon but the closest available in react-icons
-  unity: <FaUnity />,
-  none: <BiCodeAlt />,
-};
+import techIconMap from "@/lib/techIconMap";
 
 type ProjectCardProps = {
   project: CodingProject;
 };
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+  const TechIcon = techIconMap[project.technology ?? "none"];
   return (
     <div className="flex flex-col h-full shadow-lg rounded-lg dark:bg-dark bg-lighter p-4 transform transition-all duration-300 ease-in-out overflow-visible group hover:shadow-md hover:shadow-accent">
       <div className="relative h-60 w-full rounded-t-lg">
@@ -41,7 +23,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           />
         </div>
         <div className="absolute -bottom-4 right-2 rounded-full bg-darker p-2 text-accent text-xl items-center">
-          {techIconMap[project.technology ?? "none"]}
+          <TechIcon />
         </div>
       </div>
       <div className="flex-grow">
