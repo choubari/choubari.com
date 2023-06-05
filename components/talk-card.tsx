@@ -42,7 +42,7 @@ const TalkCard: React.FC<TalkCardProps> = ({ talk }) => {
           <i>{talk.date}</i>
         </p>
         <p
-          className={`text-sm my-2 dark:text-light text-dark w-full`}
+          className={`text-sm my-2 dark:text-light text-dark w-full opacity-80`}
           title={isTextLong ? talk.description : ""}
         >
           {trimmedText}

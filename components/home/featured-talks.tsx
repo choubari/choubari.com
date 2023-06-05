@@ -12,7 +12,7 @@ export default function FeaturedTalks() {
         </h1>
         <p>Some of the talks I presented.</p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
         {Talks.slice(0, 3).map((talk, index) => (
           <TalkCard key={index} talk={talk} />
         ))}

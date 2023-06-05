@@ -17,7 +17,7 @@ const RepoCard: React.FC<RepoCardProps> = ({ repo }) => {
       <div className="flex flex-col h-full p-4 shadow-lg rounded-lg dark:bg-dark bg-lighter">
         <div className="flex-grow">
           <h2 className="text-xl font-bold mb-2">{repo.name}</h2>
-          <p className="mb-2 text-sm">{repo.description}</p>
+          <p className="mb-2 text-sm opacity-80">{repo.description}</p>
         </div>
         <div className="flex justify-between items-center text-md">
           <div className="flex items-center gap-1">
