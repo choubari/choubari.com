@@ -37,7 +37,7 @@ const TalkCard: React.FC<TalkCardProps> = ({ talk }) => {
         <h2 className="text-lg font-bold mt-4 dark:text-light text-darker">
           {talk.title}
         </h2>
-        <p className="text-sm mt-2 dark:text-grey text-dark">
+        <p className="text-sm mt-2 opacity-75 flex items-center">
           <FaCalendar className="inline-block mr-2" />
           <i>{talk.date}</i>
         </p>
