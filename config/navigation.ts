@@ -26,8 +26,8 @@ export const FooterAbout: NavLink[] = [
 ];
 export const FooterProjects: NavLink[] = [
   { label: "Work", href: "/work" },
-  { label: "Open Source", href: "/oss" },
   { label: "Talks", href: "/talks" },
+  { label: "Open Source", href: "/oss" },
   { label: "Content Creation", href: "/creator" },
   { label: "Blog", href: "/blog" },
   { label: "Newsletter", href: "/newsletter" },
