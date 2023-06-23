@@ -24,6 +24,7 @@ function Slim() {
       width="100%"
       frameBorder="0"
       scrolling="no"
+      className="rounded-md"
       style={{
         borderRadius: "5px !important",
         margin: 0,
