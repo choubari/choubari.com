@@ -61,3 +61,7 @@ type Repo = {
   language: string;
   fork: boolean;
 };
+type Dropdown = {
+  id: number;
+  label: string;
+};
