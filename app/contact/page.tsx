@@ -6,8 +6,38 @@ import { useState } from "react";
 export default function Contact() {
   const [fullname, setFullName] = useState("");
   const [email, setEmail] = useState("");
-  const [selected, setSelected] = useState(ContactPurpose[0]);
+  const [purpose, setPurpose] = useState(ContactPurpose[0]);
   const [message, setMessage] = useState("");
+  const formData = new FormData();
+
+  function clearForm() {
+    setFullName("");
+    setEmail("");
+    setPurpose(ContactPurpose[0]);
+    setMessage("");
+  }
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    formData.append("fullName", fullname);
+    formData.append("email", email);
+    formData.append("purpose", purpose.label);
+    formData.append("message", message);
+
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      body: formData,
+    });
+    console.log("res ", res);
+    const resBody = await res.json();
+    // console.log("resBody ", resBody);
+    if (res.status == 200) {
+      alert("Your message has been sent successfully");
+    } else {
+      alert("Error, try again!");
+    }
+    clearForm();
+  }
 
   return (
     <div>
@@ -17,7 +47,7 @@ export default function Contact() {
           together
           <span className="text-4xl leading-3 text-accent">.</span>
         </h1>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="grid md:grid-cols-2 md:gap-6 mt-10 mb-5">
             <div className="relative z-0 w-full group">
               <label htmlFor="first" className="block mb-2 font-medium">
@@ -56,8 +86,8 @@ export default function Contact() {
             </label>
             <SelectMenu
               dropdownList={ContactPurpose}
-              selected={selected}
-              setSelected={setSelected}
+              selected={purpose}
+              setSelected={setPurpose}
             />
           </div>
           <div className="mt-5 mb-7">

@@ -51,7 +51,7 @@ export type Testimonial = {
   photo: string;
 };
 
-type Repo = {
+export type Repo = {
   id: number;
   name: string;
   html_url: string;
@@ -61,7 +61,14 @@ type Repo = {
   language: string;
   fork: boolean;
 };
-type Dropdown = {
+export type Dropdown = {
   id: number;
   label: string;
+};
+
+export type ContactEntry = {
+  fullName: string;
+  email: string;
+  purpose: string;
+  message: string;
 };
