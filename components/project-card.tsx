@@ -10,7 +10,8 @@ type ProjectCardProps = {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const TechIcon =
-    techIconMap[project.technology ?? "none"] || techIconMap["none"];
+    techIconMap[project.technology?.toLowerCase() ?? "undefined"] ||
+    techIconMap["none"];
   return (
     <div className="flex flex-col h-full shadow-lg rounded-lg dark:bg-dark bg-lighter p-4 transform transition-all duration-300 ease-in-out overflow-visible group hover:shadow-md hover:shadow-accent">
       <div className="relative h-60 w-full rounded-t-lg">

@@ -1,4 +1,5 @@
-import { Repo } from "@/types";
+import { FooterSocials } from "@/config/navigation";
+import { Repo, SocialPlatform } from "@/types";
 
 export const fetchGithubRepos = async () => {
   const response = await fetch("https://api.github.com/users/choubari/repos");
@@ -51,3 +52,8 @@ export const getTiktokFollowers = async () => {
   // TODO: fetch API and get Followers count
   return 35;
 };
+
+export function findSocialLinkHref(label: SocialPlatform): string {
+  const socialLink = FooterSocials.find((social) => social.label === label);
+  return socialLink ? socialLink.href : "#";
+}

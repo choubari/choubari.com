@@ -1,4 +1,4 @@
-import { NavLink } from "@/types";
+import { NavLink, SocialLink } from "@/types";
 
 export const Navbar: NavLink[] = [
   { label: "Home", href: "/" },
@@ -32,7 +32,7 @@ export const FooterProjects: NavLink[] = [
   { label: "Blog", href: "/blog" },
   { label: "Newsletter", href: "/newsletter" },
 ];
-export const FooterSocials: NavLink[] = [
+export const FooterSocials: SocialLink[] = [
   { label: "Github", href: github },
   { label: "Linkedin", href: linkedin },
   { label: "YouTube", href: youtube },

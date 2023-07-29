@@ -72,3 +72,17 @@ export type ContactEntry = {
   purpose: string;
   message: string;
 };
+
+export type SocialPlatform =
+  | "Github"
+  | "Linkedin"
+  | "YouTube"
+  | "Twitter"
+  | "Instagram"
+  | "Facebook"
+  | "TikTok";
+
+export type SocialLink = {
+  label: SocialPlatform;
+  href: string;
+};
