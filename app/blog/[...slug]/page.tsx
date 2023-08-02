@@ -5,6 +5,7 @@ import { Metadata } from "next";
 import { FaCalendar, FaChevronLeft } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
+import { Mdx } from "@/components/mdx/mdx-components";
 
 interface PostPageProps {
   params: {
@@ -50,8 +51,9 @@ export default async function PostPage({ params }: PostPageProps) {
   if (!post) {
     notFound();
   }
+
   return (
-    <article className="container relative mx-auto max-w-3xl py-6 lg:py-10">
+    <article className="container relative mx-auto max-w-3xl py-6 px-5 lg:py-10">
       <Link
         href="/blog"
         className="absolute left-[-200px] top-14 hidden xl:inline-flex items-center hover:text-accent hover:underline"
@@ -60,7 +62,7 @@ export default async function PostPage({ params }: PostPageProps) {
         <p>See all posts</p>
       </Link>
       <div>
-        <h1 className="mb-4 inline-block font-heading text-4xl leading-tight lg:text-5xl">
+        <h1 className="mb-4 inline-block font-heading font-serif font-bold text-4xl leading-tight lg:text-5xl">
           {post.title}
         </h1>
         {post.date && (
@@ -76,19 +78,15 @@ export default async function PostPage({ params }: PostPageProps) {
         <Image
           src={post.image}
           alt={post.title}
+          style={{ width: "100%", height: "auto" }}
           width={720}
-          height={405}
+          height={0}
           className="my-8 rounded-md border bg-muted transition-colors"
           priority
         />
       )}
-      {/* TODO: MDX */}
-      {/* <Mdx code={post.body.code} /> */}
-      <div
-        className="[&>*]:mb-3 [&>*:last-child]:mb-0"
-        dangerouslySetInnerHTML={{ __html: post.body.html }}
-      />
-      <hr className="mt-12" />
+      <Mdx code={post.body.code} />
+      <hr className="mt-12 border-accent" />
       <div className="py-6 lg:py-10">
         <Link
           href="/blog"
