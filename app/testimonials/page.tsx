@@ -11,6 +11,7 @@ export default function TestimonialsPage() {
         </h1>
         <p>What They're Saying!</p>
       </div>
+      {/* Masonry Grid */}
       <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4">
         {Testimonials.map((testimonial, index) => (
           <TestimonialCard key={index} testimonial={testimonial} />

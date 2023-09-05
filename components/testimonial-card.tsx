@@ -9,7 +9,7 @@ interface TestimonialProps {
 
 const TestimonialCard: React.FC<TestimonialProps> = ({ testimonial }) => {
   return (
-    <div className="rounded-lg overflow-hidden shadow-lg dark:bg-dark transition-all mb-4">
+    <div className="rounded-lg overflow-hidden shadow-lg bg-lighter dark:bg-dark transition-all mb-4">
       <figure className="max-w-screen-md mx-auto p-4">
         <blockquote>
           <p className="text-lg font-medium text-darker dark:text-lighter">
