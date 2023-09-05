@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./mdx.css";
-import Image from "next/image";
+import Image, { ImageProps } from "next/image";
 import { useMDXComponent } from "next-contentlayer/hooks";
 
 import { Callout } from "@/components/mdx/callout";
@@ -172,7 +172,8 @@ const components = {
       {...props}
     />
   ),
-  Image,
+  // Image,
+  Image: (props: ImageProps) => <Image {...props} />,
   Callout,
   Card: MdxCard,
 };
