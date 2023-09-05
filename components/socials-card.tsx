@@ -18,7 +18,7 @@ const SocialsCard: React.FC<PlatformProps> = ({
   let count = countFormatter(followersCount);
   return (
     <a href={findSocialLinkHref(platform)} target="_blank" rel="noreferrer">
-      <div className="flex h-full p-4 shadow-lg rounded-lg dark:bg-dark bg-lighter">
+      <div className="flex h-full p-4 shadow-lg rounded-lg dark:bg-dark bg-lighter transform transition-all duration-300 ease-in-out hover:shadow-md hover:shadow-accent">
         <div className="flex-grow flex-col">
           <h2 className="text-4xl font-bold">{count}</h2>
           <p className="mb-2 text-sm opacity-80">{title}</p>

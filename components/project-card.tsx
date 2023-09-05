@@ -13,7 +13,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     techIconMap[project.technology?.toLowerCase() ?? "undefined"] ||
     techIconMap["none"];
   return (
-    <div className="flex flex-col h-full shadow-lg rounded-lg dark:bg-dark bg-lighter p-4 transform transition-all duration-300 ease-in-out overflow-visible group hover:shadow-md hover:shadow-accent">
+    <div className="flex flex-col h-full shadow-lg rounded-lg dark:bg-dark bg-lighter p-4 overflow-visible group">
       <div className="relative h-60 w-full rounded-t-lg">
         <div className="absolute inset-0 overflow-hidden">
           <Image
@@ -40,7 +40,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             href={project.link}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center px-3 py-1 rounded-full bg-gradient-to-r from-accent to-accentgrad text-white"
+            className="inline-flex items-center px-3 py-1 rounded-full bg-accent hover:bg-gradient-to-r hover:from-accent hover:to-accentgrad text-white"
           >
             <FiLink className="mr-2" /> Demo
           </a>
@@ -50,7 +50,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             href={project.github}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center px-3 py-1 rounded-full bg-gradient-to-r from-accent to-accentgrad text-white"
+            className="inline-flex items-center px-3 py-1 rounded-full bg-accent hover:bg-gradient-to-r hover:from-accent hover:to-accentgrad text-white"
           >
             <FiGithub className="mr-2" /> Code
           </a>

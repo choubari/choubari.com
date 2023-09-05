@@ -8,7 +8,7 @@ function PostCard(post: Post) {
   return (
     <article
       key={post._id}
-      className="mb-8 shadow-lg rounded-lg dark:bg-dark bg-lighter"
+      className="mb-8 shadow-lg rounded-lg dark:bg-dark bg-lighter transform transition-all duration-300 ease-in-out hover:shadow-md hover:shadow-accent"
     >
       <Link href={post.slug}>
         {post.image && (
@@ -51,7 +51,7 @@ export default function Blog() {
           Blog
           <span className="text-4xl leading-3 text-accent">.</span>
         </h1>
-        <p>The one and the only to read my confessions.</p>
+        <p>The one and the only place to read my confessions.</p>
       </div>
       {posts?.length ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">

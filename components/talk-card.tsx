@@ -18,7 +18,7 @@ const TalkCard: React.FC<TalkCardProps> = ({ talk }) => {
     : talk.description;
 
   return (
-    <div className="flex flex-col shadow-lg rounded-lg dark:bg-dark bg-lighter p-4 transform transition-all duration-300 ease-in-out">
+    <div className="flex flex-col shadow-lg rounded-lg dark:bg-dark bg-lighter p-4 transform transition-all duration-300 ease-in-out overflow-visible group">
       <div className="relative h-60 w-full rounded-t-lg">
         <div className="absolute inset-0 overflow-hidden">
           <Image
@@ -29,7 +29,7 @@ const TalkCard: React.FC<TalkCardProps> = ({ talk }) => {
             className="transition-all duration-300 ease-in-out transform group-hover:scale-110"
           />
         </div>
-        <div className="absolute -bottom-4 right-2 rounded-full bg-accent p-2 text-white font-medium">
+        <div className="absolute -bottom-4 right-2 rounded-full bg-accent p-2 text-dark font-medium">
           ⏱️{talk.duration}
         </div>
       </div>
@@ -52,7 +52,7 @@ const TalkCard: React.FC<TalkCardProps> = ({ talk }) => {
         <div key={index}>
           <a
             href={presentation.hostLink}
-            className="text-accent"
+            className="text-accent hover:underline"
             target="_blank"
             rel="noreferrer"
           >
@@ -61,19 +61,34 @@ const TalkCard: React.FC<TalkCardProps> = ({ talk }) => {
           , {presentation.country}
           {presentation.city}
           {presentation.video && (
-            <a href={presentation.video} target="_blank" rel="noreferrer">
+            <a
+              className="hover:underline"
+              href={presentation.video}
+              target="_blank"
+              rel="noreferrer"
+            >
               {" "}
               📽️
             </a>
           )}
           {presentation.slides && (
-            <a href={presentation.slides} target="_blank" rel="noreferrer">
+            <a
+              className="hover:underline"
+              href={presentation.slides}
+              target="_blank"
+              rel="noreferrer"
+            >
               {" "}
               📝
             </a>
           )}
           {presentation.demo && (
-            <a href={presentation.demo} target="_blank" rel="noreferrer">
+            <a
+              className="hover:underline"
+              href={presentation.demo}
+              target="_blank"
+              rel="noreferrer"
+            >
               {" "}
               💻
             </a>

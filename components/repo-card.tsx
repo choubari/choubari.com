@@ -14,7 +14,7 @@ const RepoCard: React.FC<RepoCardProps> = ({ repo }) => {
 
   return (
     <a href={repo.html_url} target="_blank" rel="noreferrer">
-      <div className="flex flex-col h-full p-4 shadow-lg rounded-lg dark:bg-dark bg-lighter">
+      <div className="flex flex-col h-full p-4 shadow-lg rounded-lg dark:bg-dark bg-lighter transform transition-all duration-300 ease-in-out hover:shadow-md hover:shadow-accent">
         <div className="flex-grow">
           <h2 className="text-xl font-bold mb-2">{repo.name}</h2>
           <p className="mb-2 text-sm opacity-80">{repo.description}</p>
