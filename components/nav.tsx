@@ -16,7 +16,7 @@ export function Nav() {
       className="w-full bg-lighter dark:bg-dark"
       aria-label="Header Navigation"
     >
-      <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+      <div className="justify-between px-8 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <Link href="/">
             <Logo />
