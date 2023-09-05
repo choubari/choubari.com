@@ -24,7 +24,7 @@ export const Talks: Talk[] = [
   },
   {
     title: "Best Practices for Better Accessibility",
-    thumbnail: "a11y-devoxxma.jpg",
+    thumbnail: "a11y-devoxxma-footage.jpg",
     date: "October 6th, 2022",
     duration: "50min.",
     description:
@@ -52,7 +52,7 @@ export const Talks: Talk[] = [
   },
   {
     title: `How to make a "perfect" git commit`,
-    thumbnail: "gitcommit-devoxxma.jpg",
+    thumbnail: "gitcommit-devoxxma-footage.jpg",
     date: "October 5th, 2022",
     duration: "25min.",
     description:

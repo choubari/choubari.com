@@ -19,7 +19,7 @@ const TalkCard: React.FC<TalkCardProps> = ({ talk }) => {
 
   return (
     <div className="flex flex-col shadow-lg rounded-lg dark:bg-dark bg-lighter p-4 transform transition-all duration-300 ease-in-out overflow-visible group">
-      <div className="relative h-60 w-full rounded-t-lg">
+      <div className="relative h-52 w-full rounded-t-lg">
         <div className="absolute inset-0 overflow-hidden">
           <Image
             src={`/talks/${talk.thumbnail}`}
@@ -29,12 +29,12 @@ const TalkCard: React.FC<TalkCardProps> = ({ talk }) => {
             className="transition-all duration-300 ease-in-out transform group-hover:scale-110"
           />
         </div>
-        <div className="absolute -bottom-4 right-2 rounded-full bg-accent p-2 text-dark font-medium">
+        <div className="absolute -bottom-5 right-2 rounded-full bg-accent p-2 text-dark font-medium">
           ⏱️{talk.duration}
         </div>
       </div>
       <div>
-        <h2 className="text-lg font-bold mt-4 dark:text-light text-darker">
+        <h2 className="text-lg font-bold mt-5 dark:text-light text-darker">
           {talk.title}
         </h2>
         <p className="text-sm mt-2 opacity-75 flex items-center">
