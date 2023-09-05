@@ -1,5 +1,5 @@
 import { SocialPlatform } from "@/types";
-import { findSocialLinkHref } from "@/lib/utils";
+import { countFormatter, findSocialLinkHref } from "@/lib/utils";
 import SocialsIcon from "@/lib/socialsIconMap";
 
 type PlatformProps = {
@@ -14,11 +14,13 @@ const SocialsCard: React.FC<PlatformProps> = ({
 }) => {
   const SocialIcon =
     SocialsIcon[platform.toLowerCase() ?? "undefined"] || SocialsIcon["none"];
+
+  let count = countFormatter(followersCount);
   return (
     <a href={findSocialLinkHref(platform)} target="_blank" rel="noreferrer">
       <div className="flex h-full p-4 shadow-lg rounded-lg dark:bg-dark bg-lighter">
         <div className="flex-grow flex-col">
-          <h2 className="text-4xl font-bold font-mono">{followersCount}</h2>
+          <h2 className="text-4xl font-bold">{count}</h2>
           <p className="mb-2 text-sm opacity-80">{title}</p>
         </div>
         <div className="text-accent text-4xl items-center">

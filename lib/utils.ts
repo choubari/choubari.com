@@ -53,7 +53,20 @@ export const getTiktokFollowers = async () => {
   return 35;
 };
 
+export const getNewsletterFollowers = async () => {
+  // TODO: fetch API and get Followers count
+  return 25;
+};
+
 export function findSocialLinkHref(label: SocialPlatform): string {
+  if (label === "Newsletter") {
+    return "/newsletter";
+  }
   const socialLink = FooterSocials.find((social) => social.label === label);
   return socialLink ? socialLink.href : "#";
+}
+
+export function countFormatter(n: number): string {
+  const countFormat = Intl.NumberFormat("en", { notation: "compact" });
+  return countFormat.format(n);
 }

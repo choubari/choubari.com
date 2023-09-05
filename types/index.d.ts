@@ -80,7 +80,8 @@ export type SocialPlatform =
   | "Twitter"
   | "Instagram"
   | "Facebook"
-  | "TikTok";
+  | "TikTok"
+  | "Newsletter";
 
 export type SocialLink = {
   label: SocialPlatform;

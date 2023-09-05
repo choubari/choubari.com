@@ -1,7 +1,9 @@
+import Deck from "../skillsCards/DeckCards";
+
 export default function Hero() {
   return (
-    <div className="md:flex md:flew-row justify-between py-28 mx-4 md:px-20">
-      <div className="basis-7/12 pr-16 bg-dark">
+    <div className="flex flex-col md:flex-row justify-between py-28 mx-8 md:px-20">
+      <div className="md:basis-7/12 pr-16 bg-dark">
         <h1 className="text-5xl pb-10 font-serif font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-violina via-rosalina to-orangina">
           Coding & Storytelling:
           <br />
@@ -20,19 +22,21 @@ export default function Hero() {
         </div>
         <p className="font-medium text-lg">
           I turn ideas into reality with the power of software engineering, and
-          I share my knowledge & passion using content creation.
+          I share my knowledge as a content creator.
         </p>
         <p className="text-accent font-mono text-xl font-bold underline">
           <a href="/contact">Let's CHAT!</a>
         </p>
       </div>
-      <div className="basis-5/12 bg-accent flex relative w-full justify-center">
+      <div className="mt-40 mb-20 md:mt-0 md:mb-0 md:basis-5/12 items-center flex relative w-full justify-center bg-blue-300">
         {/* <Image
             src={avatar}
             alt={"avatar"}
             fill
             style={{ objectFit: "contain" }}
           /> */}
+        <p>🎉🎉</p>
+        <Deck />
       </div>
     </div>
   );

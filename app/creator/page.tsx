@@ -4,6 +4,7 @@ import {
   getGithubFollowers,
   getInstagramFollowers,
   getLinkedinFollowers,
+  getNewsletterFollowers,
   getTiktokFollowers,
   getTwitterFollowers,
   getYoutubeFollowers,
@@ -23,6 +24,7 @@ async function followersByPlatform(): Promise<PlatformCounts[]> {
   const instagramFollowers = await getInstagramFollowers();
   const facebookFollowers = await getFacebookFollowers();
   const tiktokFollowers = await getTiktokFollowers();
+  const newsletterFollowers = await getNewsletterFollowers();
 
   const platformCounts: PlatformCounts[] = [
     { name: "YouTube", label: "Subscribers", count: youtubeFollowers },
@@ -32,6 +34,11 @@ async function followersByPlatform(): Promise<PlatformCounts[]> {
     { name: "Linkedin", label: "Followers", count: linkedinFollowers },
     { name: "Facebook", label: "Page Likes", count: facebookFollowers },
     { name: "TikTok", label: "Followers", count: tiktokFollowers },
+    {
+      name: "Newsletter",
+      label: "Newsletter Subscribers",
+      count: newsletterFollowers,
+    },
   ];
   return platformCounts;
 }
@@ -45,7 +52,14 @@ export default async function Creator() {
           Content Creation{" "}
           <span className="text-4xl leading-3 text-accent">.</span>
         </h1>
-        <p>Tech Influencer to be XD</p>
+        <p className="italic">Tech Influencer to be XD</p>
+        <p className="mt-7 mb-2">
+          Part-Time Content Creator, present in almost all social media
+          platforms.
+          <br />
+          In a mission to deliver educating yet entertaining content for the dev
+          community.
+        </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-4">
         {platforms.map((platform) => (

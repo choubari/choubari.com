@@ -8,6 +8,7 @@ import {
   BsLinkedin,
 } from "react-icons/bs";
 import { FaTiktok } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const SocialsIcon: { [key: string]: () => ReactElement } = {
   youtube: () => <BsYoutube />,
@@ -17,6 +18,7 @@ const SocialsIcon: { [key: string]: () => ReactElement } = {
   instagram: () => <BsInstagram />,
   twitter: () => <BsTwitter />,
   facebook: () => <BsFacebook />,
+  newsletter: () => <MdEmail />,
   none: () => <></>,
   undefined: () => <></>,
   null: () => <></>,
