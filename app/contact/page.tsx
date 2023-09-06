@@ -30,11 +30,11 @@ export default function Contact() {
     });
     console.log("res ", res);
     const resBody = await res.json();
-    // console.log("resBody ", resBody);
-    if (res.status == 200) {
+    console.log("resBody ", resBody);
+    if (resBody.id) {
       alert("Your message has been sent successfully");
     } else {
-      alert("Error, try again!");
+      alert("Error, try again! or reach me at kawtar.choubari@gmail.com");
     }
     clearForm();
   }
