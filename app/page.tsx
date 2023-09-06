@@ -8,6 +8,7 @@ export default function Home() {
       <Hero />
       <FeaturedProjects />
       <FeaturedTalks />
+      {/* @ts-expect-error Async Server Component */}
       <FeaturedRepos />
     </>
   );
