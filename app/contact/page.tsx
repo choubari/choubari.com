@@ -41,7 +41,7 @@ export default function Contact() {
 
   return (
     <div>
-      <div className="flex flex-col lg:px-64 py-20">
+      <div className="flex flex-col px-8 py-10 md:px-20 md:py-20 lg:px-64">
         <h1 className="font-serif text-4xl font-bold mb-2">
           Let<span className="text-accent">'</span>s make some cool stuff
           together

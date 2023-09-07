@@ -60,7 +60,7 @@ export default function Blog() {
           ))}
         </div>
       ) : (
-        <p>No posts published.</p>
+        <p className="flex justify-center">No posts published!</p>
       )}
     </div>
   );

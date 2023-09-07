@@ -32,7 +32,7 @@ export default async function FeaturedRepos() {
         */
   }
   return (
-    <div className="mx-8 my-6 md:px-20">
+    <div className="mx-8 my-6 mb-20 md:px-20">
       <div className="flex flex-col mb-5">
         <h1 className="font-serif text-4xl font-bold mb-2">
           Open Source
@@ -47,7 +47,9 @@ export default async function FeaturedRepos() {
           <RepoCard key={repo.id} repo={repo} />
         ))}
       </div>
-      <Button route={"/oss"} label={"View All Repos"} />
+      <div className="my-10">
+        <Button route={"/oss"} label={"View All Repos"} />
+      </div>
     </div>
   );
 }

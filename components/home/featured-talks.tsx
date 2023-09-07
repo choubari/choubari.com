@@ -4,7 +4,7 @@ import Button from "../ui/button";
 
 export default function FeaturedTalks() {
   return (
-    <div className="mx-8 my-6 md:px-20">
+    <div className="mx-8 my-6 mb-20 md:px-20">
       <div className="flex flex-col mb-5">
         <h1 className="font-serif text-4xl font-bold mb-2">
           Featured Talks
@@ -17,7 +17,9 @@ export default function FeaturedTalks() {
           <TalkCard key={index} talk={talk} />
         ))}
       </div>
-      <Button route={"/talks"} label={"View All Talks"} />
+      <div className="my-10">
+        <Button route={"/talks"} label={"View All Talks"} />
+      </div>
     </div>
   );
 }
