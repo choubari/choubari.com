@@ -7,7 +7,6 @@ type RepoCardProps = {
   repo: Repo;
 };
 const RepoCard: React.FC<RepoCardProps> = ({ repo }) => {
-  // console.log(repo.language);
   const TechIcon =
     techIconMap[repo.language?.toLowerCase() ?? "undefined"] ||
     techIconMap["none"];

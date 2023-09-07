@@ -24,10 +24,8 @@ export async function POST(request: Request) {
         message: contactEntry.message,
       }),
     });
-    console.log("route ", { status: "sent", ...data });
     return NextResponse.json(data);
   } catch (error) {
-    console.log("err ", error);
     return NextResponse.json({ error });
   }
 }

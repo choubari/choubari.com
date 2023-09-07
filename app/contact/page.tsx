@@ -28,9 +28,7 @@ export default function Contact() {
       method: "POST",
       body: formData,
     });
-    console.log("res ", res);
     const resBody = await res.json();
-    console.log("resBody ", resBody);
     if (resBody.id) {
       alert("Your message has been sent successfully");
     } else {
