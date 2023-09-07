@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-light dark:bg-darker text-darker dark:text-lighter">
+      <body className="bg-light dark:bg-darker text-darker dark:text-lighter overflow-x-hidden">
         <Providers>
           <Nav />
           <div className="mx-auto lg:max-w-7xl">{children}</div>
