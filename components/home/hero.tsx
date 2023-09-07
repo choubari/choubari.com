@@ -5,13 +5,13 @@ export default function Hero() {
   return (
     <div className="flex flex-col md:flex-row justify-between gap-10 pt-12 pb-44 md:pt-32 mx-8 md:px-20">
       <div className="md:basis-7/12 pr-16">
-        <h1 className="text-5xl pb-10 font-serif font-bold leading-tight">
+        <h1 className="text-5xl pb-5 md:pb-10 font-serif font-bold leading-tight">
           <span className="text-accent">Coding</span> &
           <span className="text-accent"> Storytelling</span>:
           <br />
           That's what I do!
         </h1>
-        <div className="flex flex-wrap mb-8">
+        <div className="flex flex-wrap mb-6 md:mb-8">
           <code className="bg-blue-300 p-1.5 mr-2 my-1 rounded-sm font-medium text-dark">
             Engineering
           </code>

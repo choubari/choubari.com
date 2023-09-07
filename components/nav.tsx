@@ -62,7 +62,6 @@ export function Nav() {
             </button>
           </div>
         </div>
-
         <div
           id="navbar-multi-level"
           className={`pb-3 mt-4 md:block md:pb-0 md:mt-0 ${
@@ -79,7 +78,7 @@ export function Nav() {
                 } font-bold text-xl hover:text-darker dark:hover:text-light`}
                 key={link.label}
               >
-                <Link href={link.href}>
+                <Link href={link.href} onClick={() => setNavbar(false)}>
                   {link.label}
                   <span
                     className={`text-4xl leading-3 ${
