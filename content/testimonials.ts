@@ -24,7 +24,15 @@ export const Testimonials: Testimonial[] = [
     position:
       "Professor | Inventor | IEEE Global Cities Alliance, MEA Chair | Director",
     company: "EMSI",
-    photo: "PrEssaaidi.jpg",
+    photo: "ProfEssaaidi.jpg",
+  },
+  {
+    name: "Ibrahim Mestadi",
+    message:
+      "Kawtar, the former Chair of the IEEE ENSIAS Student Branch in 2020, is a standout collaborator. We achieved success together on projects like building the branch's website and excelling in the Gitex Dubai IoT & AI challenge under her guidance.\n As a university peer, she's known for her kindness, strong problem-solving skills, and creative flair in front-end development and UI/UX design.\n I confidently endorse her for any future endeavors.",
+    position: "Software Engineer",
+    company: "Inyad",
+    photo: "ibrahim.jpg",
   },
   {
     name: "Aymane Helfa",
