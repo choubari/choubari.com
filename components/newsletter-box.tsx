@@ -7,6 +7,7 @@ function FullWidthDark() {
       height="250"
       frameBorder="0"
       scrolling="no"
+      title="newsletter box"
       style={{
         borderRadius: "4px",
         margin: 0,
@@ -24,6 +25,7 @@ function Slim() {
       width="100%"
       frameBorder="0"
       scrolling="no"
+      title="newsletter box"
       className="rounded-md"
       style={{
         borderRadius: "5px !important",

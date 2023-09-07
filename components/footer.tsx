@@ -12,7 +12,10 @@ import { SiGithub, SiNextdotjs, SiTailwindcss, SiVercel } from "react-icons/si";
 
 export default function Footer() {
   return (
-    <footer className="bg-lighter dark:bg-dark text-darker dark:text-light py-4 mt-20 w-full">
+    <footer
+      role="contentinfo"
+      className="bg-lighter dark:bg-dark text-darker dark:text-light py-4 mt-20 w-full"
+    >
       <div className="mx-auto px-8 pt-5 lg:px-8 lg:max-w-7xl grid grid-cols-1 md:grid-cols-12 gap-8">
         <div className="md:col-span-4 md:space-y-4">
           <Logo />

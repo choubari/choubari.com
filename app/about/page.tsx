@@ -29,10 +29,13 @@ export default function About() {
         <p className="mb-4">
           Hey! I'm <span className="font-bold">Kawtar CHOUBARI</span>, a Junior
           Software Engineer and Content Creator from Morocco, currently living
-          in Paris, France. I work on Front-End development with
-          JavaScript/TypeScript on a daily basis with frameworks like ReactJS,
-          Next.js and a bit of React Native. I'm currently looking into learning
-          Back-End JS development with NodeJS.
+          in Paris, France.
+        </p>
+        <p className="mb-4">
+          I work mainly on Front-End development, with JavaScript / TypeScript
+          on a daily basis and frameworks like ReactJS, Next.js, and also React
+          Native. I'm currently looking into learning Back-End JS development
+          with NodeJS.
         </p>
         <p className="mb-4">
           I have been able to put my knowledge in good use by giving back to the
@@ -72,6 +75,7 @@ export default function About() {
           <li>Software Development</li>
           <li>Public Speaking</li>
           <li>Content Creation</li>
+          <li>Community Building</li>
           <li>Partnership & Collaboration</li>
           <li>Student life, Career Advice</li>
           <li>...</li>

@@ -18,7 +18,9 @@ export default function RootLayout({
       <body className="bg-light dark:bg-darker text-darker dark:text-lighter overflow-x-hidden">
         <Providers>
           <Nav />
-          <div className="mx-auto lg:max-w-7xl">{children}</div>
+          <main className="mx-auto lg:max-w-7xl" role="main">
+            {children}
+          </main>
         </Providers>
         <Footer />
         <script
