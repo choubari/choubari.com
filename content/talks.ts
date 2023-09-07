@@ -2,6 +2,7 @@ import { Talk } from "@/types";
 
 export const Talks: Talk[] = [
   {
+    featured: true,
     title: "Next.js 13, what's going on?",
     thumbnail: "nextjs-biztech.jpg",
     date: "May 20th, 2023",
@@ -23,6 +24,7 @@ export const Talks: Talk[] = [
     ],
   },
   {
+    featured: true,
     title: "Best Practices for Better Accessibility",
     thumbnail: "a11y-devoxxma-footage.jpg",
     date: "October 6th, 2022",
@@ -51,6 +53,7 @@ export const Talks: Talk[] = [
     ],
   },
   {
+    featured: true,
     title: `How to make a "perfect" git commit`,
     thumbnail: "gitcommit-devoxxma-footage.jpg",
     date: "October 5th, 2022",

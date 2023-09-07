@@ -7,30 +7,6 @@ import { fetchGithubRepos } from "@/lib/utils";
 
 export default async function FeaturedRepos() {
   const repos = await fetchGithubRepos();
-  {
-    /* 
-
-  const [repos, setRepos] = useState<Repo[]>([]);
-  
-  useEffect(() => {
-      const fetchData = async () => {
-          const response = await fetch(
-              "https://api.github.com/users/choubari/repos"
-              );
-              const data: Repo[] = await response.json();
-              // Filter out forked repos
-              const originalRepos = data.filter((repo) => !repo.fork);
-              // Sort by number of stars
-              const sortedData = originalRepos.sort(
-                  (a, b) => b.stargazers_count - a.stargazers_count
-                  );
-                  setRepos(sortedData);
-                };
-                fetchData();
-            }, []);
-            
-        */
-  }
   return (
     <div className="mx-8 my-6 mb-20 md:px-20">
       <div className="flex flex-col mb-5">

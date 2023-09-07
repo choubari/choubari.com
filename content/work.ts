@@ -2,6 +2,7 @@ import { CodingProject } from "@/types";
 
 export const CodingProjects: CodingProject[] = [
   {
+    featured: true,
     title: "ExpressIT",
     thumbnail: "expressit.PNG",
     description:
@@ -18,6 +19,7 @@ export const CodingProjects: CodingProject[] = [
     technology: "react",
   },
   {
+    featured: true,
     title: "Muslim App",
     thumbnail: "muslimapp.jpg",
     description:
@@ -27,6 +29,7 @@ export const CodingProjects: CodingProject[] = [
     technology: "android",
   },
   {
+    featured: true,
     title: "KindNet",
     thumbnail: "kindnet.PNG",
     description:

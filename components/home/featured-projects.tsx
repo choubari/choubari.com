@@ -16,9 +16,11 @@ export default function FeaturedProjects() {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
-        {CodingProjects.slice(0, 3).map((project, index) => (
-          <ProjectCard key={index} project={project} />
-        ))}
+        {CodingProjects.filter((project) => project.featured).map(
+          (project, index) => (
+            <ProjectCard key={index} project={project} />
+          )
+        )}
       </div>
       <div className="my-10">
         <Button route={"/work"} label={"View All Projects"} />

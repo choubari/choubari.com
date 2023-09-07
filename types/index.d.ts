@@ -14,6 +14,7 @@ export type Presentation = {
 };
 
 export type Talk = {
+  featured?: boolean;
   title: string;
   thumbnail: string;
   date: string;
@@ -35,6 +36,7 @@ export type Technology =
   | "unity";
 
 export type CodingProject = {
+  featured?: boolean;
   title: string;
   thumbnail: string;
   description: string;
