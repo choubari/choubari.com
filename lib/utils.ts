@@ -70,3 +70,7 @@ export function countFormatter(n: number): string {
   const countFormat = Intl.NumberFormat("en", { notation: "compact" });
   return countFormat.format(n);
 }
+
+export function absoluteUrl(path: string) {
+  return `${process.env.NEXT_PUBLIC_APP_URL}${path}`;
+}

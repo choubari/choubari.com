@@ -6,6 +6,7 @@ import { FaCalendar, FaChevronLeft } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 import { Mdx } from "@/components/mdx/mdx-components";
+import { absoluteUrl } from "@/lib/utils";
 
 interface PostPageProps {
   params: {
@@ -45,6 +46,30 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.description,
+    authors: [
+      {
+        name: "Kawtar Choubari",
+        url: "https://choubari.com",
+      },
+    ],
+    openGraph: {
+      title: post.title,
+      description: post.description,
+      type: "article",
+      url: absoluteUrl(post.slug),
+      images: [
+        {
+          url: post.image,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.description,
+      images: [post.image],
+    },
   };
 }
 

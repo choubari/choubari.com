@@ -4,6 +4,10 @@ import { compareDesc, format, parseISO } from "date-fns";
 import { allPosts, Post } from "contentlayer/generated";
 import { FaCalendar } from "react-icons/fa";
 
+export const metadata = {
+  title: "Blog",
+};
+
 function PostCard(post: Post) {
   return (
     <article

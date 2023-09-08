@@ -3,6 +3,7 @@ import "./globals.css";
 import { Providers } from "@/lib/provider";
 import Footer from "@/components/footer";
 import { siteConfig } from "@/config/site";
+import Analytics from "@/components/analytics";
 
 export const metadata = {
   title: siteConfig.name,
@@ -68,6 +69,7 @@ export default function RootLayout({
           <Nav />
           <main className="mx-auto lg:max-w-7xl" role="main">
             {children}
+            <Analytics />
           </main>
         </Providers>
         <Footer />
