@@ -7,12 +7,7 @@ interface ButtonProps {
   bgColor?: string;
   hoverColor?: string;
 }
-export default function Button({
-  route,
-  label,
-  bgColor,
-  hoverColor,
-}: ButtonProps) {
+export default function Button({ route, label, bgColor }: ButtonProps) {
   return (
     <div className="text-center">
       <Link href={route}>

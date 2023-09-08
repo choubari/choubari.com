@@ -28,12 +28,7 @@ export default function Hero() {
           I share my stories as a content creator.
         </p>
         <div className="flex my-7">
-          <Button
-            route={"/contact"}
-            label={"Let's CHAT!"}
-            bgColor={"bg-accent"}
-            hoverColor={"bg-accentgrad"}
-          />
+          <Button route={"/contact"} label={"Let's CHAT!"} />
         </div>
       </div>
       <div className="mt-40 mb-20 md:mt-0 md:mb-0 md:basis-5/12 items-center flex relative w-full justify-center">

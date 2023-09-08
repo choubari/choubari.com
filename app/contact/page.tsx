@@ -1,6 +1,7 @@
 "use client";
 import SelectMenu from "@/components/ui/dropdown";
 import { ContactPurpose } from "@/content/contact";
+import classNames from "classnames";
 import { useState } from "react";
 
 export default function Contact() {
@@ -9,6 +10,7 @@ export default function Contact() {
   const [purpose, setPurpose] = useState(ContactPurpose[0]);
   const [message, setMessage] = useState("");
   const formData = new FormData();
+  const [loading, setLoading] = useState(false);
 
   function clearForm() {
     setFullName("");
@@ -19,6 +21,7 @@ export default function Contact() {
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    setLoading(true);
     formData.append("fullName", fullname);
     formData.append("email", email);
     formData.append("purpose", purpose.label);
@@ -29,6 +32,7 @@ export default function Contact() {
       body: formData,
     });
     const resBody = await res.json();
+    setLoading(false);
     if (resBody.id) {
       alert("Your message has been sent successfully");
     } else {
@@ -104,9 +108,13 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="text-white bg-accent font-medium rounded-md px-5 py-2.5 text-center transform transition-all duration-300 ease-in-out hover:shadow-md hover:shadow-blue-300"
+            className={classNames(
+              loading ? "bg-grey cursor-not-allowed" : "bg-accent",
+              "text-white font-medium rounded-md px-5 py-2.5 text-center transform transition-all duration-300 ease-in-out hover:shadow-md hover:shadow-blue-300"
+            )}
+            disabled={loading}
           >
-            Submit
+            {loading ? "Loading..." : "Submit"}
           </button>
         </form>
       </div>
