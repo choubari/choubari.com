@@ -19,7 +19,7 @@ export function Nav() {
     >
       <div className="justify-between px-8 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
-          <Link href="/" aria-label="navigate to home page">
+          <Link href="/" aria-label="Navigate to the Home Page">
             <Logo />
           </Link>
           <div className="md:hidden">

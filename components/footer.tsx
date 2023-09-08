@@ -18,7 +18,9 @@ export default function Footer() {
     >
       <div className="mx-auto px-8 pt-5 lg:px-8 lg:max-w-7xl grid grid-cols-1 md:grid-cols-12 gap-8">
         <div className="md:col-span-4 md:space-y-4">
-          <Logo />
+          <Link href="/" aria-label="Navigate to the Home Page">
+            <Logo />
+          </Link>
           <p className="pb-3">
             I turn ideas into reality with the power of software engineering,
             and I share my knowledge & passion using content creation.
@@ -100,7 +102,7 @@ export default function Footer() {
         </div>
         <p>
           Open Sourced{" "}
-          <Link className="text-grey italic hover:underline" href={githubrepo}>
+          <Link className="italic hover:underline" href={githubrepo}>
             {"(soon)"}
           </Link>
         </p>

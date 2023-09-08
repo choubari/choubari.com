@@ -3,12 +3,15 @@ import { FiGithub, FiLink } from "react-icons/fi";
 import Image from "next/image";
 import { CodingProject } from "@/types";
 import techIconMap from "@/lib/techIconMap";
+import classNames from "classnames";
 
 type ProjectCardProps = {
   project: CodingProject;
 };
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+  const chipStyle =
+    "inline-flex items-center px-3 py-1 rounded-full border hover:border-gray-300 border-gray-500 dark:border-gray-300 hover:dark:border-gray-500 bg-lighter dark:bg-dark hover:bg-gradient-to-r from-accentgrad via-accent to-accent";
   const TechIcon =
     techIconMap[project.technology?.toLowerCase() ?? "undefined"] ||
     techIconMap["none"];
@@ -40,7 +43,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             href={project.link}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center px-3 py-1 rounded-full bg-accent hover:bg-gradient-to-r hover:from-accent hover:to-accentgrad text-white"
+            className={classNames(chipStyle)}
           >
             <FiLink className="mr-2" /> Demo
           </a>
@@ -50,7 +53,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             href={project.github}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center px-3 py-1 rounded-full bg-accent hover:bg-gradient-to-r hover:from-accent hover:to-accentgrad text-white"
+            className={classNames(chipStyle)}
           >
             <FiGithub className="mr-2" /> Code
           </a>
