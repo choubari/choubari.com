@@ -113,8 +113,9 @@ export default async function PostPage({ params }: PostPageProps) {
         />
       )}
       <Mdx code={post.body.code} />
-      <hr className="mt-12 border-accent" />
-      <div className="py-6 lg:py-10">
+      <hr className="mt-20 border-accent" />
+      <hr className="mt-1 border-accent" />
+      <div className="py-6 lg:py-10 flex items-center justify-between">
         <Link
           href="/blog"
           className="flex justify-center items-center hover:text-accent hover:underline"
@@ -122,6 +123,15 @@ export default async function PostPage({ params }: PostPageProps) {
           <FaChevronLeft className="mr-2 h-4 w-4" />
           <p>See all posts</p>
         </Link>
+        <div className="flex flex-col items-end">
+          <p>Liked this?</p>
+          <a href="https://www.buymeacoffee.com/choubari" target="_blank">
+            <img
+              width={150}
+              src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=choubari&button_colour=12c5ca&font_colour=212733&font_family=Bree&outline_colour=000000&coffee_colour=FFDD00"
+            />
+          </a>
+        </div>
       </div>
     </article>
   );

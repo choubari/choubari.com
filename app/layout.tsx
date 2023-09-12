@@ -74,6 +74,18 @@ export default function RootLayout({
         </Providers>
         <Footer />
         <script
+          data-name="BMC-Widget"
+          data-cfasync="false"
+          src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+          data-id="choubari"
+          data-description="Support me on Buy me a coffee!"
+          data-message="Thank you for visiting my website! You may want to buy me a coffee ;)"
+          data-color="#12c5ca"
+          data-position="Right"
+          data-x_margin="18"
+          data-y_margin="18"
+        ></script>
+        <script
           type="text/javascript"
           async
           src="https://embeds.beehiiv.com/attribution.js"
