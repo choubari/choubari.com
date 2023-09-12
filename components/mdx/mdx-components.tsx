@@ -6,6 +6,7 @@ import { useMDXComponent } from "next-contentlayer/hooks";
 import { Callout } from "@/components/mdx/callout";
 import { MdxCard } from "@/components/mdx/mdx-card";
 import classNames from "classnames";
+import { ReactTweet } from "./react-tweet";
 
 const components = {
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLTableRowElement>) => (
@@ -175,6 +176,7 @@ const components = {
   // Image,
   Image: (props: ImageProps) => <Image {...props} />,
   Callout,
+  ReactTweet,
   Card: MdxCard,
 };
 

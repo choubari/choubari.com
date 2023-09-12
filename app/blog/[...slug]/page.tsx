@@ -104,6 +104,8 @@ export default async function PostPage({ params }: PostPageProps) {
       {post.image && (
         <Image
           src={post.image}
+          placeholder="blur"
+          blurDataURL="/blog/placeholder.jpg"
           alt={post.title}
           style={{ width: "100%", height: "auto" }}
           width={720}

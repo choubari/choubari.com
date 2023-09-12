@@ -18,6 +18,8 @@ function PostCard(post: Post) {
         {post.image && (
           <Image
             src={post.image}
+            placeholder="blur"
+            blurDataURL="/blog/placeholder.jpg"
             alt={post.title}
             width={804}
             height={452}

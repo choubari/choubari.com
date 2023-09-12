@@ -23,7 +23,7 @@ export default function Footer() {
           </Link>
           <p className="pb-3">
             I turn ideas into reality with the power of software engineering,
-            and I share my knowledge & passion using content creation.
+            and I share my stories as a content creator.
           </p>
           <NewsletterBox type={"slim"} />
         </div>
