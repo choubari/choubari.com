@@ -1,7 +1,11 @@
-import Deck from "../skillsCards/DeckCards";
+// import Deck from "../skillsCards/DeckCards";
 import Button from "../ui/button";
+import dynamic from "next/dynamic";
 
 export default function Hero() {
+  // Server Component:
+  const Deck = dynamic(() => import("../skillsCards/DeckCards"));
+
   return (
     <div className="flex flex-col md:flex-row justify-between gap-10 pt-12 pb-44 md:pt-32 mx-8 md:px-20">
       <div className="md:basis-7/12 pr-16">
