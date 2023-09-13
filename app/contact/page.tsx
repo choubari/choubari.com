@@ -1,7 +1,6 @@
 "use client";
 import SelectMenu from "@/components/ui/dropdown";
 import { ContactPurpose } from "@/content/contact";
-import { validateCaptcha } from "@/lib/utils";
 import classNames from "classnames";
 import { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -19,6 +18,7 @@ export default function Contact() {
     setEmail("");
     setPurpose(ContactPurpose[0]);
     setMessage("");
+    grecaptcha.reset();
   }
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -32,15 +32,7 @@ export default function Contact() {
       return;
     }
 
-    if (!(await validateCaptcha(grecaptcha.getResponse()))) {
-      setLoading(false);
-      clearForm();
-      return alert(
-        "Internal ReCaptcha Error, reach me at kawtar.choubari@gmail.com"
-      );
-    }
-    // console.log("greca-res", grecaptcha.getResponse());
-    // formData.append("g-recaptcha-response", grecaptcha.getResponse());
+    formData.append("g-recaptcha-response", grecaptcha.getResponse());
 
     formData.append("fullName", fullname);
     formData.append("email", email);
@@ -53,7 +45,6 @@ export default function Contact() {
     });
     const resBody = await res.json();
     setLoading(false);
-    console.log("resbody", resBody);
     if (resBody.id) {
       alert("Your message has been sent successfully");
     } else {

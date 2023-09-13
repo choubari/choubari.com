@@ -78,7 +78,6 @@ export function absoluteUrl(path: string) {
 export const validateCaptcha = (response_key) => {
   return new Promise((resolve, reject) => {
     const secret_key = process.env.RECAPTCHA_SECRET_KEY;
-    console.log("rk", response_key);
     const url = `https://www.google.com/recaptcha/api/siteverify?secret=${secret_key}&response=${response_key}`;
 
     fetch(url, {
@@ -93,7 +92,6 @@ export const validateCaptcha = (response_key) => {
         }
       })
       .catch((err) => {
-        console.log("error", err);
         resolve(false);
       });
   });
