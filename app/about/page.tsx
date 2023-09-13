@@ -15,7 +15,7 @@ export default function About() {
         <Image
           src="/about/polaroid.png"
           style={{ objectFit: "cover" }}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 50vw"
           width={800}
           height={500}
           loading="eager"

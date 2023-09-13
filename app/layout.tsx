@@ -64,8 +64,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="bg-light dark:bg-darker text-darker dark:text-lighter overflow-x-hidden">
+    <html lang="en" suppressHydrationWarning={true}>
+      <body
+        className="bg-light dark:bg-darker text-darker dark:text-lighter overflow-x-hidden"
+        suppressHydrationWarning={true}
+      >
         <Providers>
           <Nav />
           <main className="mx-auto lg:max-w-7xl" role="main">

@@ -36,12 +36,6 @@ export default function Hero() {
         </div>
       </div>
       <div className="mt-40 mb-20 md:mt-0 md:mb-0 md:basis-5/12 items-center flex relative w-full justify-center">
-        {/* <Image
-            src={avatar}
-            alt={"avatar"}
-            fill
-            style={{ objectFit: "contain" }}
-          /> */}
         <p className="text-4xl">🎉🎉</p>
         <Deck />
       </div>
