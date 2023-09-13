@@ -4,6 +4,7 @@ import { Providers } from "@/lib/provider";
 import Footer from "@/components/footer";
 import { siteConfig } from "@/config/site";
 import Analytics from "@/components/analytics";
+import Script from "next/script";
 
 export const metadata = {
   title: siteConfig.name,
@@ -73,7 +74,7 @@ export default function RootLayout({
           </main>
         </Providers>
         <Footer />
-        <script
+        <Script
           data-name="BMC-Widget"
           data-cfasync="false"
           src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
@@ -84,12 +85,12 @@ export default function RootLayout({
           data-position="Right"
           data-x_margin="18"
           data-y_margin="18"
-        ></script>
-        <script
+        ></Script>
+        <Script
           type="text/javascript"
           async
           src="https://embeds.beehiiv.com/attribution.js"
-        ></script>
+        ></Script>
       </body>
     </html>
   );
