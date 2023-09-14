@@ -61,6 +61,7 @@ export default async function Creator() {
           community.
         </p>
       </div>
+
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-4">
         {platforms.map((platform) => (
           <SocialsCard
@@ -70,6 +71,11 @@ export default async function Creator() {
           />
         ))}
       </div>
+      <div
+        className="senja-embed"
+        data-id="48bd35bb-286e-4df6-84bd-9476d602681f"
+        data-lazyload="false"
+      ></div>
     </div>
   );
 }

@@ -93,6 +93,11 @@ export default function RootLayout({
           strategy="lazyOnload"
         ></Script> */}
         <Script
+          async
+          type="text/javascript"
+          src="https://static.senja.io/dist/platform.js"
+        ></Script>
+        <Script
           type="text/javascript"
           async
           src="https://embeds.beehiiv.com/attribution.js"
