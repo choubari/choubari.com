@@ -21,6 +21,7 @@ function PostCard(post: Post) {
             placeholder="blur"
             blurDataURL="/blog/placeholder.jpg"
             alt={post.title}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 50vw"
             width={804}
             height={452}
             className="rounded-md border bg-muted transition-colors"

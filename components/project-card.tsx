@@ -23,6 +23,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             src={`/work/coding-projects/${project.thumbnail}`}
             fill
             style={{ objectFit: "cover" }}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 50vw"
             alt={project.title}
             className="transition-all duration-300 ease-in-out transform group-hover:scale-110"
           />

@@ -25,6 +25,7 @@ const TalkCard: React.FC<TalkCardProps> = ({ talk }) => {
             src={`/talks/${talk.thumbnail}`}
             fill
             style={{ objectFit: "cover" }}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 50vw"
             alt={talk.title}
             className="transition-all duration-300 ease-in-out transform group-hover:scale-110"
           />

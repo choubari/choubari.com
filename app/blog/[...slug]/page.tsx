@@ -108,6 +108,7 @@ export default async function PostPage({ params }: PostPageProps) {
           blurDataURL="/blog/placeholder.jpg"
           alt={post.title}
           style={{ width: "100%", height: "auto" }}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 50vw"
           width={720}
           height={0}
           className="my-8 rounded-md border bg-muted transition-colors"
