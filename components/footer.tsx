@@ -2,6 +2,7 @@ import {
   FooterAbout,
   FooterSocials,
   FooterProjects,
+  github,
   githubrepo,
   twitter,
 } from "@/config/navigation";
@@ -82,30 +83,25 @@ export default function Footer() {
         </div>
       </div>
       <hr className="h-px border-0 opacity-30 bg-grey mt-8 mb-4" />
-      <div className="flex flex-col md:flex-row gap-1 text-center items-center justify-center">
-        <p>
-          © {new Date().getFullYear()} Copyright. Made with ❤ by{" "}
-          <Link
-            href={twitter}
-            className="text-accent font-mono hover:underline"
-          >
-            @choubari_
-          </Link>
-        </p>
-        <div className="flex flex-row gap-1 text-center items-center justify-center">
-          <p> using</p>
+      <div className="flex flex-wrap px-5 gap-1 text-center items-center justify-center">
+        © {new Date().getFullYear()} Copyright. Made with ❤ by
+        <Link href={twitter} className="text-accent font-mono hover:underline">
+          @choubari_
+        </Link>
+        <p> using</p>
+        <div className="flex gap-1 items-center">
           <SiNextdotjs />
           <SiTailwindcss />
           <SiGithub />
           <SiVercel />
           <p>. </p>
         </div>
-        <p>
-          Open Sourced{" "}
-          <Link className="italic hover:underline" href={githubrepo}>
-            {"(soon)"}
+        <div className="flex gap-1 items-center">
+          Open sourced →
+          <Link className="hover:underline hover:text-accent" href={github}>
+            soon
           </Link>
-        </p>
+        </div>
       </div>
     </footer>
   );
