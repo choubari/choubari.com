@@ -7,8 +7,8 @@ export default function Hero() {
   const Deck = dynamic(() => import("../skillsCards/DeckCards"));
 
   return (
-    <div className="flex flex-col md:flex-row justify-between gap-10 pt-12 pb-44 md:pt-32 mx-8 md:px-20">
-      <div className="md:basis-7/12 pr-16">
+    <div className="flex flex-col md:flex-row justify-between gap-10 pt-10 pb-44 md:pt-32 mx-8 md:px-20">
+      <div className="md:basis-7/12 md:pr-16">
         <h1 className="text-5xl pb-5 md:pb-10 font-serif font-bold leading-tight">
           <span className="text-accent">Coding</span> &
           <span className="text-accent"> Storytelling</span>:
