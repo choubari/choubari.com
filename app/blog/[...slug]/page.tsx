@@ -127,10 +127,15 @@ export default async function PostPage({ params }: PostPageProps) {
           <p>See all posts</p>
         </Link>
         <div className="flex flex-col items-end">
-          <p>Liked this?</p>
-          <a href="https://www.buymeacoffee.com/choubari" target="_blank">
+          <p>Liked this post?</p>
+          <a
+            href="https://www.buymeacoffee.com/choubari"
+            aria-label="Buy me a coffee"
+            target="_blank"
+          >
             <img
               width={150}
+              alt="Buy me a coffee link"
               src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=choubari&button_colour=12c5ca&font_colour=212733&font_family=Bree&outline_colour=000000&coffee_colour=FFDD00"
             />
           </a>
