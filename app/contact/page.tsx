@@ -59,7 +59,7 @@ export default function Contact() {
         <span className="text-4xl leading-3 text-accent">.</span>
       </h1>
       <form encType="multipart/form-data" onSubmit={handleSubmit}>
-        <div className="grid md:grid-cols-2 md:gap-6 mt-10 mb-5">
+        <div className="grid md:grid-cols-2 md:gap-6 my-5">
           <div className="relative z-0 w-full group">
             <label htmlFor="first" className="block mb-2 font-medium">
               Full Name
@@ -68,14 +68,14 @@ export default function Contact() {
               type="text"
               id="fullname"
               placeholder="John Doe"
-              className="font-mono font-normal border rounded-md block w-full p-2.5 bg-gray-50 border-gray-300 dark:bg-dark focus:outline-none focus:ring-accent focus:border-accent"
+              className="font-mono font-normal border rounded-md block w-full p-2.5 bg-gray-50 border-gray-300  dark:bg-dark focus:outline-none focus:ring-accent focus:border-accent"
               value={fullname}
               onChange={(e) => setFullName(e.target.value)}
               minLength={4}
               required
             />
           </div>
-          <div className="relative z-0 w-full group">
+          <div className="relative z-0 w-full group mt-5 md:mt-0">
             <label htmlFor="email" className="block mb-2 font-medium">
               Email
             </label>
@@ -84,14 +84,14 @@ export default function Contact() {
               autoComplete="email"
               placeholder="email@example.com"
               id="email"
-              className="font-mono font-normal border rounded-md block w-full p-2.5 bg-gray-50 border-gray-300  dark:bg-dark focus:outline-none focus:ring-accent focus:border-accent"
+              className="font-mono font-normal border rounded-md block w-full p-2.5 bg-gray-50 border-gray-300 dark:bg-dark focus:outline-none focus:ring-accent focus:border-accent"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
           </div>
         </div>
-        <div className="mt-5 mb-7">
+        <div className="my-5">
           <label htmlFor="email" className="block mb-2 font-medium">
             What would you like to chat about?
           </label>
@@ -115,7 +115,7 @@ export default function Contact() {
             required
           ></textarea>
         </div>
-        <div>
+        <div className="my-5">
           <ReCAPTCHA
             size="normal"
             sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
@@ -125,7 +125,7 @@ export default function Contact() {
           type="submit"
           className={classNames(
             loading ? "bg-grey cursor-not-allowed" : "bg-accent",
-            "text-white font-medium rounded-md mt-5 px-5 py-2.5 text-center transform transition-all duration-300 ease-in-out hover:shadow-md hover:shadow-blue-300"
+            "text-white font-medium rounded-md px-5 py-2.5 text-center transform transition-all duration-300 ease-in-out hover:shadow-md hover:shadow-blue-300"
           )}
           disabled={loading}
         >
