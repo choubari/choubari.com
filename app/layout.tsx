@@ -4,7 +4,6 @@ import { Providers } from "@/lib/provider";
 import Footer from "@/components/footer";
 import { siteConfig } from "@/config/site";
 import Analytics from "@/components/analytics";
-import Script from "next/script";
 
 export const metadata = {
   title: siteConfig.name,
@@ -92,17 +91,6 @@ export default function RootLayout({
           data-y_margin="18"
           strategy="lazyOnload"
         ></Script> */}
-        <Script
-          async
-          type="text/javascript"
-          src="https://static.senja.io/dist/platform.js"
-        ></Script>
-        <Script
-          type="text/javascript"
-          async
-          src="https://embeds.beehiiv.com/attribution.js"
-          strategy="lazyOnload"
-        ></Script>
       </body>
     </html>
   );

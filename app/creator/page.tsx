@@ -1,3 +1,4 @@
+import SenjaSocialGrid from "@/components/senja-social-grid";
 import SocialsCard from "@/components/socials-card";
 import {
   getFacebookFollowers,
@@ -71,11 +72,7 @@ export default async function Creator() {
           />
         ))}
       </div>
-      <div
-        className="senja-embed"
-        data-id="48bd35bb-286e-4df6-84bd-9476d602681f"
-        data-lazyload="false"
-      ></div>
+      <SenjaSocialGrid />
     </div>
   );
 }
