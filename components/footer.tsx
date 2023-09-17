@@ -10,6 +10,7 @@ import { Logo } from "./logo";
 import Link from "next/link";
 import NewsletterBox from "./newsletter-box";
 import { SiGithub, SiNextdotjs, SiTailwindcss, SiVercel } from "react-icons/si";
+import Script from "next/script";
 
 export default function Footer() {
   return (
@@ -17,6 +18,12 @@ export default function Footer() {
       role="contentinfo"
       className="bg-lighter dark:bg-dark text-darker dark:text-light py-4 mt-20 w-full"
     >
+      <Script
+        type="text/javascript"
+        async
+        src="https://embeds.beehiiv.com/attribution.js"
+        strategy="lazyOnload"
+      ></Script>
       <div className="mx-auto px-8 pt-5 lg:px-8 lg:max-w-7xl grid grid-cols-1 md:grid-cols-12 gap-8">
         <div className="md:col-span-4 md:space-y-4">
           <Link href="/" aria-label="Choubari's Home Page">
