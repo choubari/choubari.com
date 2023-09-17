@@ -34,10 +34,10 @@ export default function About() {
           in Paris, France.
         </p>
         <p className="mb-4">
-          I work mainly on Front-End development, with JavaScript / TypeScript
-          on a daily basis and frameworks like ReactJS, Next.js, and also React
-          Native. I'm currently looking into learning Back-End JS development
-          with NodeJS.
+          I mainly work on Front-End development on a daily basis, with
+          JavaScript / TypeScript and frameworks like ReactJS, Next.js, and also
+          React Native. I'm currently looking into learning Back-End JS
+          development with NodeJS.
         </p>
         <p className="mb-4">
           I have been able to put my knowledge in good use by giving back to the
@@ -95,7 +95,8 @@ export default function About() {
           is taken.
         </p>
         <h2 className="font-serif text-2xl font-bold mt-12 mb-6">
-          Let's build something cool together
+          Let<span className="text-2xl leading-3 text-accent">'</span>s build
+          something cool together
           <span className="text-2xl leading-3 text-accent">!</span>
         </h2>
         <Button route={"/contact"} label={"Get in touch"}></Button>
