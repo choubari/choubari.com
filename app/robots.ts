@@ -1,6 +1,8 @@
 import { MetadataRoute } from "next";
 import { allPosts } from "contentlayer/generated";
 
+const home = process.env.NEXT_PUBLIC_APP_URL;
+
 export default function robots(): MetadataRoute.Robots {
   // Find all unpublished posts.
   const disallowedPosts = allPosts
@@ -10,7 +12,7 @@ export default function robots(): MetadataRoute.Robots {
   const disallowedPaths = [...disallowedPosts, "/api/contact"];
 
   return {
-    sitemap: "/sitemap.xml",
+    sitemap: `${home}/sitemap.xml`,
     rules: {
       userAgent: "*",
       allow: "/",
