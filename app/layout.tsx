@@ -65,12 +65,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <body
-        className="bg-light dark:bg-darker text-darker dark:text-lighter overflow-x-hidden"
+        className="bg-light dark:bg-darker text-darker dark:text-lighter"
         suppressHydrationWarning={true}
       >
         <Providers>
           <Nav />
-          <main className="mx-auto lg:max-w-7xl" role="main">
+          <main className="mx-auto lg:max-w-7xl overflow-x-hidden" role="main">
             {children}
             <Analytics />
           </main>
