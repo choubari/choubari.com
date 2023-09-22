@@ -48,7 +48,7 @@ export default function Contact() {
     if (resBody.id) {
       alert("Your message has been sent successfully");
     } else {
-      alert("Error, try again! or reach me at kawtar.choubari@gmail.com");
+      alert(`Error, try again! or reach me at ${process.env.FORWARD_EMAIL}`);
     }
     clearForm();
   }

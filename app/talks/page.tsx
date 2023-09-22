@@ -1,5 +1,6 @@
 import TalkCard from "@/components/talk-card";
 import { Talks } from "@/content/talks";
+import { compareDesc } from "date-fns";
 
 export default function TalksPage() {
   return (
@@ -12,7 +13,9 @@ export default function TalksPage() {
         <p>Because Sharing is Caring!</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-4 my-6">
-        {Talks.map((talk, index) => (
+        {Talks.sort((a, b) =>
+          compareDesc(new Date(a.date), new Date(b.date))
+        ).map((talk, index) => (
           <TalkCard key={index} talk={talk} />
         ))}
       </div>
