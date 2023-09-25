@@ -1,3 +1,32 @@
+## 🛠️ Main Stack
+
+- Next.js 13 (app directory & server components)
+- TailwindCSS
+- TypeScript
+- ContentLayer
+
+<p align="center">
+  <img  src="public/og.jpg" >
+</p>
+
+## 📧 Contact
+
+If you want to contact me regarding this project or anything else, you can use the [contact page](https://choubari.com/contact) or write to [contact@choubari.com](mailto:contact@choubari.com).
+
+## ⭐ Liked my work?
+
+If you found value in this open source project, you can give it a star and share it. Also, let's connect on [social media platforms](https://choubari.com/creator).
+
+**or:**
+
+<a href="https://www.buymeacoffee.com/choubari" aria-label="Buy me a coffee" target="_blank">
+<img width={150} alt="Buy me a coffee link" src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=choubari&button_colour=12c5ca&font_colour=212733&font_family=Bree&outline_colour=000000&coffee_colour=FFDD00"/>
+</a>
+
+---
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
