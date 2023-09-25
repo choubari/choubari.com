@@ -73,8 +73,8 @@ export default function RootLayout({
       >
         <Providers>
           <Nav />
-          <main className="mx-auto lg:max-w-7xl overflow-x-hidden" role="main">
-            {children}
+          <main className="overflow-x-hidden" role="main">
+            <div className="mx-auto lg:max-w-7xl">{children}</div>
             <Analytics />
           </main>
         </Providers>
