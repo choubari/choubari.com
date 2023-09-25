@@ -4,6 +4,7 @@ import { Providers } from "@/lib/provider";
 import Footer from "@/components/footer";
 import { siteConfig } from "@/config/site";
 import Analytics from "@/components/analytics";
+import { isDesktop, isMobile } from "react-device-detect";
 
 export const metadata = {
   title: siteConfig.name,
@@ -62,6 +63,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  console.log("isMobile ", isMobile);
+  console.log("isDesktop ", isDesktop);
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <body
@@ -78,19 +81,24 @@ export default function RootLayout({
         <Footer />
         {/* TODO: replace with html script tag as the Nextjs Script didn't work */}
         {/* TODO: load this script only on desktop */}
-        {/* <Script
-          data-name="BMC-Widget"
-          data-cfasync="false"
-          src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-          data-id="choubari"
-          data-description="Support me on Buy me a coffee!"
-          data-message="Thank you for visiting my website! You may want to buy me a coffee ;)"
-          data-color="#12c5ca"
-          data-position="Right"
-          data-x_margin="18"
-          data-y_margin="18"
-          strategy="lazyOnload"
-        ></Script> */}
+        <h1 className="text-xl font-bold">
+          isDesktop{":" + isDesktop}, isMobile{":" + isMobile}
+        </h1>
+        {isDesktop && (
+          <script
+            data-name="BMC-Widget"
+            data-cfasync="false"
+            src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+            data-id="choubari"
+            data-description="Support me on Buy me a coffee!"
+            data-message="Thank you for visiting my website! You may want to buy me a coffee ;)"
+            data-color="#12c5ca"
+            data-position="Right"
+            data-x_margin="18"
+            data-y_margin="18"
+            // strategy="lazyOnload"
+          ></script>
+        )}
       </body>
     </html>
   );
