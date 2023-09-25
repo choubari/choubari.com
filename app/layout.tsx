@@ -4,6 +4,7 @@ import { Providers } from "@/lib/provider";
 import Footer from "@/components/footer";
 import { siteConfig } from "@/config/site";
 import Analytics from "@/components/analytics";
+import { isDesktop } from "react-device-detect";
 
 export const metadata = {
   title: siteConfig.name,
@@ -70,27 +71,29 @@ export default function RootLayout({
       >
         <Providers>
           <Nav />
-          <main className="mx-auto lg:max-w-7xl overflow-x-hidden" role="main">
-            {children}
+          <main className="overflow-x-hidden" role="main">
+            <div className="mx-auto lg:max-w-7xl">{children}</div>
             <Analytics />
           </main>
         </Providers>
         <Footer />
         {/* TODO: replace with html script tag as the Nextjs Script didn't work */}
         {/* TODO: load this script only on desktop */}
-        {/* <Script
-          data-name="BMC-Widget"
-          data-cfasync="false"
-          src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-          data-id="choubari"
-          data-description="Support me on Buy me a coffee!"
-          data-message="Thank you for visiting my website! You may want to buy me a coffee ;)"
-          data-color="#12c5ca"
-          data-position="Right"
-          data-x_margin="18"
-          data-y_margin="18"
-          strategy="lazyOnload"
-        ></Script> */}
+        {/* {isDesktop && (
+          <script
+            data-name="BMC-Widget"
+            data-cfasync="false"
+            src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+            data-id="choubari"
+            data-description="Support me on Buy me a coffee!"
+            data-message="Thank you for visiting my website! You may want to buy me a coffee ;)"
+            data-color="#12c5ca"
+            data-position="Right"
+            data-x_margin="18"
+            data-y_margin="18"
+            // strategy="lazyOnload"
+          ></script>
+        )} */}
       </body>
     </html>
   );

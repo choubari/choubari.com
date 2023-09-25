@@ -2,7 +2,6 @@ import {
   FooterAbout,
   FooterSocials,
   FooterProjects,
-  github,
   githubrepo,
   twitter,
 } from "@/config/navigation";
@@ -104,10 +103,14 @@ export default function Footer() {
           <p>. </p>
         </div>
         <div className="flex gap-1 items-center">
-          Open sourced →
-          <Link className="hover:underline hover:text-accent" href={github}>
-            soon
+          Proudly
+          <Link
+            className="hover:underline text-accent font-mono"
+            href={githubrepo}
+          >
+            Open-Source
           </Link>
+          !
         </div>
       </div>
     </footer>

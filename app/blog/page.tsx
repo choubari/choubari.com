@@ -61,7 +61,7 @@ export default function Blog() {
         <p>The one and the only place to read my confessions.</p>
       </div>
       {posts?.length ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4 mx-4 my-6">
           {posts.map((post, idx) => (
             <PostCard key={idx} {...post} />
           ))}
