@@ -2,6 +2,46 @@ import { Talk } from "@/types";
 
 export const Talks: Talk[] = [
   {
+    title: "React Server Components 101",
+    thumbnail: "placeholder.jpg",
+    date: "October 11, 2023",
+    duration: "25min.",
+    description:
+      "In this talk, we will discover React Server Components (RSC), an exciting new feature that will have huge implications on page load performance, bundle size, and how we write React applications in the near future. We'll explore RSC's architecture and its core concepts, along with practical use-cases illustrating RSC implementation and benefits. You will learn how to write tomorrow's React Applications with Server Components and understand in depth what the React team has been working on.",
+    presentations: [
+      {
+        host: "Devoxx Morocco",
+        hostLink: "https://devoxx.ma/talk/?id=22005",
+        slides:
+          "https://docs.google.com/presentation/d/1mYwfi_P9fHbgvyEp4WTa6cLGKZX9RTybXERWozZWneE/edit?usp=sharing",
+        demo: "https://github.com/choubari/react-server-components-101-demo",
+
+        country: "🇲🇦",
+        city: "Agadir",
+      },
+    ],
+  },
+  {
+    title: "Modern Web Development with Next.js 13",
+    thumbnail: "placeholder.jpg",
+    date: "October 11, 2023",
+    duration: "120min.",
+    description:
+      "There is no shortage of JavaScript libraries and frameworks for modern web developers. One of the most famous libraries is React, which Meta created to help build feature-rich applications. However, it requires some additional packages to work on full potential. To overcome this issue, Vercel created Next.js which is built on top of React framework which enables the building of production ready applications. Join us to learn more about Next.js features and create your first ready-to-ship application! PS: Basic React knowledge is required.",
+    presentations: [
+      {
+        host: "Devoxx Morocco",
+        hostLink: "https://devoxx.ma/talk/?id=25435",
+        slides:
+          "https://docs.google.com/presentation/d/1c8pyShj8qoVipXYH2s2Wc7DT8DetBGpDAGnTlBhscJ4/edit?usp=sharing",
+        demo: "https://github.com/choubari/RSVP-Event-App",
+
+        country: "🇲🇦",
+        city: "Agadir",
+      },
+    ],
+  },
+  {
     featured: true,
     title: "Next.js 13, what's going on?",
     thumbnail: "nextjs-biztech.jpg",
