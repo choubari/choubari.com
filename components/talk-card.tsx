@@ -67,6 +67,7 @@ const TalkCard: React.FC<TalkCardProps> = ({ talk }) => {
               href={presentation.video}
               target="_blank"
               rel="noreferrer"
+              title="Video Recording"
             >
               {" "}
               📽️
@@ -78,20 +79,46 @@ const TalkCard: React.FC<TalkCardProps> = ({ talk }) => {
               href={presentation.slides}
               target="_blank"
               rel="noreferrer"
+              title="Slides"
             >
               {" "}
               📝
             </a>
           )}
-          {presentation.demo && (
+          {presentation.docs && (
             <a
               className="hover:underline"
-              href={presentation.demo}
+              href={presentation.docs}
               target="_blank"
               rel="noreferrer"
+              title="Docs"
+            >
+              {" "}
+              📖
+            </a>
+          )}
+          {presentation.demoCode && (
+            <a
+              className="hover:underline"
+              href={presentation.demoCode}
+              target="_blank"
+              rel="noreferrer"
+              title="Open Source Code"
             >
               {" "}
               💻
+            </a>
+          )}
+          {presentation.demoLink && (
+            <a
+              className="hover:underline"
+              href={presentation.demoLink}
+              target="_blank"
+              rel="noreferrer"
+              title="Demo Link"
+            >
+              {" "}
+              🔗
             </a>
           )}
         </div>

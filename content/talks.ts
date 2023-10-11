@@ -3,7 +3,7 @@ import { Talk } from "@/types";
 export const Talks: Talk[] = [
   {
     title: "React Server Components 101",
-    thumbnail: "placeholder.jpg",
+    thumbnail: "ReactServerComponents101.jpg",
     date: "October 11, 2023",
     duration: "25min.",
     description:
@@ -14,7 +14,9 @@ export const Talks: Talk[] = [
         hostLink: "https://devoxx.ma/talk/?id=22005",
         slides:
           "https://docs.google.com/presentation/d/1mYwfi_P9fHbgvyEp4WTa6cLGKZX9RTybXERWozZWneE/edit?usp=sharing",
-        demo: "https://github.com/choubari/react-server-components-101-demo",
+        demoCode:
+          "https://github.com/choubari/react-server-components-101-demo",
+        demoLink: "https://react-server-components-101-demo.vercel.app/",
 
         country: "🇲🇦",
         city: "Agadir",
@@ -23,7 +25,7 @@ export const Talks: Talk[] = [
   },
   {
     title: "Modern Web Development with Next.js 13",
-    thumbnail: "placeholder.jpg",
+    thumbnail: "nextjs-react-framework-devoxxma.jpeg",
     date: "October 11, 2023",
     duration: "120min.",
     description:
@@ -34,8 +36,9 @@ export const Talks: Talk[] = [
         hostLink: "https://devoxx.ma/talk/?id=25435",
         slides:
           "https://docs.google.com/presentation/d/1c8pyShj8qoVipXYH2s2Wc7DT8DetBGpDAGnTlBhscJ4/edit?usp=sharing",
-        demo: "https://github.com/choubari/RSVP-Event-App",
-
+        demoCode: "https://github.com/choubari/RSVP-Event-App",
+        demoLink: "https://rsvp.choubari.com/",
+        docs: "https://nextjs.choubari.com/",
         country: "🇲🇦",
         city: "Agadir",
       },
@@ -57,7 +60,8 @@ export const Talks: Talk[] = [
         video: "https://www.youtube.com/live/s4sdXK4ApKM?feature=share",
         slides:
           "https://docs.google.com/presentation/d/1fQrKxUaWN14whNxxydmua8DRrhW8etvz4cf_1CuX4EY/edit?usp=share_link",
-        demo: "https://github.com/choubari/Nextjs13-Demo-App",
+        demoCode: "https://github.com/choubari/Nextjs13-Demo-App",
+        demoLink: "https://nextjs13-demo-app.vercel.app/",
         country: "🌐",
         city: "Online",
       },
@@ -142,7 +146,8 @@ export const Talks: Talk[] = [
           "https://docs.google.com/presentation/d/1xgV9YQSQX05gEyEvYpWzwiXRdGCeXHztN57rN3q4yec/edit?usp=share_link",
         country: "🇲🇦",
         city: "Agadir",
-        demo: "https://gist.github.com/choubari/c89b685c334939d581489c537b5bda2f",
+        demoCode:
+          "https://gist.github.com/choubari/c89b685c334939d581489c537b5bda2f",
       },
       {
         host: "Blabla Conf",

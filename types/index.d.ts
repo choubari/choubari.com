@@ -21,7 +21,9 @@ export type Presentation = {
   city: string;
   video?: string;
   slides?: string;
-  demo?: string;
+  demoCode?: string;
+  demoLink?: string;
+  docs?: string;
 };
 
 export type Talk = {
