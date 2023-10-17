@@ -24,6 +24,7 @@ export const Talks: Talk[] = [
     ],
   },
   {
+    featured: true,
     title: "Modern Web Development with Next.js 13",
     thumbnail: "nextjs-react-framework-devoxxma.jpeg",
     date: "October 11, 2023",
@@ -45,7 +46,6 @@ export const Talks: Talk[] = [
     ],
   },
   {
-    featured: true,
     title: "Next.js 13, what's going on?",
     thumbnail: "nextjs-biztech.jpg",
     date: "May 20, 2023",
