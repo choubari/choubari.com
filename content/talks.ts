@@ -2,12 +2,13 @@ import { Talk } from "@/types";
 
 export const Talks: Talk[] = [
   {
+    featured: true,
     title: "React Server Components 101",
-    thumbnail: "ReactServerComponents101.jpg",
+    thumbnail: "ReactServerComponents101-devoxxma.jpg",
     date: "October 11, 2023",
     duration: "25min.",
     description:
-      "In this talk, we will discover React Server Components (RSC), an exciting new feature that will have huge implications on page load performance, bundle size, and how we write React applications in the near future. We'll explore RSC's architecture and its core concepts, along with practical use-cases illustrating RSC implementation and benefits. You will learn how to write tomorrow's React Applications with Server Components and understand in depth what the React team has been working on.",
+      "React Server Components: an exciting new feature that have huge implications on page load performance, bundle size, and how we write React applications in the near future. We'll explore RSC's architecture and its core concepts, along with practical use-cases illustrating RSC implementation and benefits. You will learn how to write tomorrow's React Applications with Server Components and understand in depth what the React team has been working on.",
     presentations: [
       {
         host: "Devoxx Morocco",
@@ -26,11 +27,11 @@ export const Talks: Talk[] = [
   {
     featured: true,
     title: "Modern Web Development with Next.js 13",
-    thumbnail: "nextjs-react-framework-devoxxma.jpeg",
+    thumbnail: "nextjs-react-framework-devoxxma.jpg",
     date: "October 11, 2023",
     duration: "120min.",
     description:
-      "There is no shortage of JavaScript libraries and frameworks for modern web developers. One of the most famous libraries is React, which Meta created to help build feature-rich applications. However, it requires some additional packages to work on full potential. To overcome this issue, Vercel created Next.js which is built on top of React framework which enables the building of production ready applications. Join us to learn more about Next.js features and create your first ready-to-ship application! PS: Basic React knowledge is required.",
+      "Vercel created Next.js, built on top of React framework which enables building production ready applications. Join us to learn more about Next.js and create your first ready-to-ship application!",
     presentations: [
       {
         host: "Devoxx Morocco",
@@ -102,7 +103,6 @@ export const Talks: Talk[] = [
     ],
   },
   {
-    featured: true,
     title: "Best Practices for Better Accessibility",
     thumbnail: "a11y-devoxxma-footage.jpg",
     date: "October 6, 2022",
