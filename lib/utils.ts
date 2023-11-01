@@ -97,6 +97,13 @@ export const validateCaptcha = (response_key) => {
   });
 };
 
+export async function getPostViews(slug: string) {
+  const response = await fetch(
+    `${process.env.NEXT_PUBLIC_APP_URL}/api/views/${slug}`
+  );
+  const data = await response.json();
+  return data;
+}
 export async function incrementPostViews(slug: string) {
   await fetch(`${process.env.NEXT_PUBLIC_APP_URL}/api/views/${slug}`, {
     method: "POST",
