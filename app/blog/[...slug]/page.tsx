@@ -6,7 +6,8 @@ import { FaCalendar, FaChevronLeft } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 import { Mdx } from "@/components/mdx/mdx-components";
-import { absoluteUrl } from "@/lib/utils";
+import { absoluteUrl, incrementPostViews } from "@/lib/utils";
+import PostViews from "@/components/mdx/post-views";
 
 interface PostPageProps {
   params: {
@@ -78,6 +79,7 @@ export default async function PostPage({ params }: PostPageProps) {
   if (!post) {
     notFound();
   }
+  await incrementPostViews(post.slugAsParams);
 
   return (
     <article className="container relative mx-auto max-w-3xl py-6 px-5 lg:py-10">
@@ -92,14 +94,18 @@ export default async function PostPage({ params }: PostPageProps) {
         <h1 className="mb-4 inline-block font-heading font-serif font-bold text-4xl leading-tight lg:text-5xl">
           {post.title}
         </h1>
-        {post.date && (
-          <p className="text-sm mb-2 opacity-60 flex items-center">
-            <FaCalendar className="inline-block mr-2" />
-            <time dateTime={post.date} className="italic">
-              {format(parseISO(post.date), "LLLL d, yyyy")}
-            </time>
-          </p>
-        )}
+        <div className="flex gap-5">
+          {post.date && (
+            <p className="text-sm mb-2 opacity-60 flex items-center">
+              <FaCalendar className="inline-block mr-2" />
+              <time dateTime={post.date} className="italic">
+                {format(parseISO(post.date), "LLLL d, yyyy")}
+              </time>
+            </p>
+          )}
+          {/* @ts-expect-error Async Server Component */}
+          <PostViews slug={post.slugAsParams} />
+        </div>
       </div>
       {post.image && (
         <Image

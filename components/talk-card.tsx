@@ -1,10 +1,5 @@
 import Image from "next/image";
-import {
-  FaCalendar,
-  FaPlay,
-  FaFilePowerpoint,
-  FaLaptopCode,
-} from "react-icons/fa";
+import { FaCalendar } from "react-icons/fa";
 import { Talk } from "@/types";
 
 type TalkCardProps = {

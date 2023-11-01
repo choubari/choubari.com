@@ -11,6 +11,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.15",
     "@react-spring/web": "^9.7.3",
+    "@supabase/supabase-js": "^2.38.4",
     "@tailwindcss/typography": "^0.5.9",
     "@types/grecaptcha": "^3.0.4",
     "@types/node": "20.2.3",

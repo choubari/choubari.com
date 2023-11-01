@@ -96,3 +96,10 @@ export const validateCaptcha = (response_key) => {
       });
   });
 };
+
+export async function incrementPostViews(slug: string) {
+  await fetch(`${process.env.NEXT_PUBLIC_APP_URL}/api/views/${slug}`, {
+    method: "POST",
+    next: { revalidate: 10 },
+  });
+}

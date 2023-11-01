@@ -29,7 +29,7 @@ export default function About() {
           <span className="text-2xl leading-3 text-accent">.</span>
         </h2>
         <p className="mb-4">
-          Hey! I'm <span className="font-bold">Kawtar CHOUBARI</span>, a Junior
+          Hey! I'm <span className="font-bold">Kawtar CHOUBARI</span>, a
           Software Engineer and Content Creator from Morocco, currently living
           in Paris, France.
         </p>
