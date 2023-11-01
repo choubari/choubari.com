@@ -6,16 +6,17 @@ interface PostViewsProps {
 }
 
 export default async function PostViews({ slug }: PostViewsProps) {
-  const response = await fetch(
-    `${process.env.NEXT_PUBLIC_APP_URL}/api/views/${slug}`
-  );
-  const data = await response.json();
+  // const response = await fetch(
+  //   `${process.env.NEXT_PUBLIC_APP_URL}/api/views/${slug}`
+  // );
+  // const data = await response.json();
 
   return (
     <div className="text-sm mb-2 opacity-60 flex items-center">
       <FaEye className="inline-block mr-2 text-base" />
       <p className="italic">
-        {data?.total && `${countFormatter(data.total)} views`}
+        0 views
+        {/* {data?.total && `${countFormatter(data.total)} views`} */}
       </p>
     </div>
   );
