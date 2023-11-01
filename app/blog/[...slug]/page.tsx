@@ -6,8 +6,9 @@ import { FaCalendar, FaChevronLeft } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 import { Mdx } from "@/components/mdx/mdx-components";
-import { absoluteUrl, incrementPostViews } from "@/lib/utils";
+import { absoluteUrl } from "@/lib/utils";
 import PostViews from "@/components/mdx/post-views";
+import incrementPostViews from "@/lib/blog/incrementPostViews";
 
 interface PostPageProps {
   params: {

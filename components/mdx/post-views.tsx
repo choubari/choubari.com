@@ -1,4 +1,5 @@
-import { countFormatter, getPostViews } from "@/lib/utils";
+import getPostViews from "@/lib/blog/getPostViews";
+import { countFormatter } from "@/lib/utils";
 import { FaEye } from "react-icons/fa";
 
 interface PostViewsProps {
