@@ -1,6 +1,8 @@
 import { compareDesc } from "date-fns";
-import { allPosts, Post } from "contentlayer/generated";
+import { allPosts } from "contentlayer/generated";
 import PostCard from "@/components/post-card";
+
+export const revalidate = 10;
 
 export const metadata = {
   title: "Blog",

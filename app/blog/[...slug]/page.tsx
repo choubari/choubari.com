@@ -10,6 +10,8 @@ import { absoluteUrl } from "@/lib/utils";
 import PostViews from "@/components/mdx/post-views";
 import incrementPostViews from "@/lib/blog/incrementPostViews";
 
+export const revalidate = 10;
+
 interface PostPageProps {
   params: {
     slug: string[];
@@ -27,14 +29,6 @@ async function getPostFromParams(params: any) {
   }
 
   return post;
-}
-
-export async function generateStaticParams(): Promise<
-  PostPageProps["params"][]
-> {
-  return allPosts.map((post) => ({
-    slug: post.slugAsParams.split("/"),
-  }));
 }
 
 export async function generateMetadata({
