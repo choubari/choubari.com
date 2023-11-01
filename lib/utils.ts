@@ -1,5 +1,6 @@
 import { FooterSocials } from "@/config/navigation";
 import { Repo, SocialPlatform } from "@/types";
+import { SupabaseAdmin } from "./supabase";
 
 export const fetchGithubRepos = async () => {
   const response = await fetch("https://api.github.com/users/choubari/repos");
@@ -98,15 +99,20 @@ export const validateCaptcha = (response_key) => {
 };
 
 export async function getPostViews(slug: string) {
-  const response = await fetch(
-    `${process.env.NEXT_PUBLIC_APP_URL}/api/views/${slug}`
-  );
-  const data = await response.json();
-  return data;
+  const { data } = await SupabaseAdmin.from("posts")
+    .select("view_count")
+    .filter("slug", "eq", slug);
+  return {
+    total: data[0]?.view_count || null,
+  };
 }
 export async function incrementPostViews(slug: string) {
-  await fetch(`${process.env.NEXT_PUBLIC_APP_URL}/api/views/${slug}`, {
-    method: "POST",
-    next: { revalidate: 10 },
-  });
+  try {
+    await SupabaseAdmin.rpc("increment_post_view", { post_slug: slug });
+    return {
+      message: `Successfully incremented post: ${slug}`,
+    };
+  } catch (error) {
+    return { error };
+  }
 }
