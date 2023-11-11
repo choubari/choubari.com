@@ -52,6 +52,26 @@ _This is italic text_
 
 ~~Strikethrough~~
 
+## Toggle
+
+<br />
+
+<details>
+<summary className="hover:cursor-pointer">Click to open this toggle</summary>
+
+The expression `0.1 + 0.2 !== 0.3` evaluates to `true` in JavaScript due to the imprecision of floating-point arithmetic. Here's why:
+
+- In JavaScript, numbers are represented in binary floating-point format, which can lead to precision issues, especially with decimals.
+- The numbers `0.1` and `0.2` do not have exact binary representations, so when they are added together, the result is not exactly `0.3` but rather a close approximation.
+- This results in the sum being slightly more than `0.3`, such as `0.30000000000000004`.
+- The strict inequality `!==` checks for both value and type equality, and since the actual sum is not exactly `0.3`, it returns `true`.
+
+This is why comparisons of floating-point numbers in JavaScript (and many other programming languages) should be done with a threshold of precision, often called "epsilon".
+
+---
+
+</details>
+
 ## Blockquotes
 
 > Why is Tailwind removing the default styles on my `h1` elements? How do I disable this? What do you mean I lose all the other base styles too?

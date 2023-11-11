@@ -1,0 +1,177 @@
+---
+title: "Let's assume it, JavaScript is weird..."
+description: Discover why JavaScript is both weird and wonderful!
+image: /blog/javascript-is-weird/thumbnail.jpg
+published: true
+date: 2023-09-31
+---
+
+JavaScript: you can't live with it, and you can't build a modern web without it!
+
+A language that's as quirky as it is crucial in the web development world.
+
+## The Weird World of JavaScript
+
+JavaScript has become the cornerstone of modern web development. It's the language that brings life to web pages, adding interactivity and functionality where HTML and CSS leave off. But, oh boy, it does have its oddities 🤪!
+
+### Quick Cooking with Lasting Impact 😎
+
+Imagine building a programming language in just **10 days**!! That's what Brendan Eich did with JavaScript...
+
+Originally named Mocha, then LiveScript, and finally JavaScript, this language was created to add interactive elements to web browsers. Despite its rushed inception, it has grown to be the most widely used scripting language for the web.
+
+### Why JavaScript is Both Popular and Peculiar
+
+JavaScript's popularity stems from its versatility and the fact that it's the only scripting language natively **supported by all major browsers**. However, its hasty development led to some... let's say `interesting` design choices. This includes its dynamic typing, `truthy/falsy` values, and some truly unique ways of handling coercion and equality.
+
+If these terms don't speak to you... make sure to catch this 3 minutes begginer friendly introduction to JavaScript 🎥.
+
+<br />
+<div className="flex justify-center">
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/pgqECiUFYYk?si=Kj1D8LYVzMPcw7KY"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen; web-share"
+  ></iframe>
+</div>
+
+### JS Quirks: Blessing or Curse?
+
+```js
+("b" + "a" + +"a" + "a").toLowerCase();
+// output: "banana"
+```
+
+<br />
+
+<details>
+<summary className="hover:cursor-pointer"><u>**Read the explanation why we got a "banana" 🍌**</u></summary>
+
+The output of the expression `("b" + "a" + +"a" + "a").toLowerCase();` being `"banana"` is due to how JavaScript handles the concatenation of strings and the unary plus operator.
+
+Here’s a step-by-step explanation:
+
+1. `"b" + "a"`: The first part is straightforward string concatenation, resulting in `"ba"`.
+2. `+"a"`: This part is tricky. The unary plus tries to convert "a" into a number. Since "a" is not numeric, the result is `NaN` (Not-a-Number).
+3. `"ba" + NaN`: Concatenating a string with `NaN` results in `"baNaN"` because `NaN` gets converted to its string representation when added to a string.
+4. `"baNaN" + "a"`: Another string concatenation happens, yielding `"baNaNa"`.
+5. Finally, `.toLowerCase()` is called on `"baNaNa"`, converting all uppercase letters to lowercase, which gives you `"banana"`.
+
+So the "quirk" here is primarily due to the unary plus operator being applied to a non-numeric string, resulting in `NaN`, and JavaScript's type coercion rules when it comes to string concatenation.
+
+---
+
+</details>
+
+These quirks aren't just for laughs 👀; they can lead to real-world bugs and head-scratching moments for developers 😵.
+
+Ever seen `0.1 + 0.2 !== 0.3` in JavaScript? Yeah, floating-point math can be a wild ride here!
+
+<br />
+
+<details>
+<summary className="hover:cursor-pointer"><u>**Read the explanation of this weird operation.**</u></summary>
+
+The expression `0.1 + 0.2 !== 0.3` evaluates to `true` in JavaScript due to the imprecision of floating-point arithmetic. Here's why:
+
+- In JavaScript, numbers are represented in binary floating-point format, which can lead to precision issues, especially with decimals.
+- The numbers `0.1` and `0.2` do not have exact binary representations, so when they are added together, the result is not exactly `0.3` but rather a close approximation.
+- This results in the sum being slightly more than `0.3`, such as `0.30000000000000004`.
+- The strict inequality `!==` checks for both value and type equality, and since the actual sum is not exactly `0.3`, it returns `true`.
+
+This is why comparisons of floating-point numbers in JavaScript (and many other programming languages) should be done with a threshold of precision, often called "epsilon".
+
+---
+
+</details>
+
+## My journey with JavaScript
+
+As a programmer, the transition from Java to JavaScript 🏎️ was like stepping into a new world where the rules I knew were turned upside down...
+
+<br />
+
+<details>
+  <summary className="hover:cursor-pointer">
+    <u>**Open the toggle for a meme 😄**</u>
+  </summary>
+  <Image
+    src="/blog/javascript-is-weird/i-hate-javascript.jpg"
+    width="1920"
+    height="0"
+    className="w-full h-auto"
+    alt="I hate javascript meme"
+  />
+</details>
+
+### From Java's Structure to JavaScript's Flexibility
+
+Switching from Java to JavaScript introduced me to the wild side of programming, where object-oriented principles and functional programming take on a whole new meaning. JavaScript's ease of setup, its enthusiastic community, and the sheer power of its features come with a trade-off 🤝 sometimes, you run into a line of code that makes you stop and say, **"Wait, what?"**
+
+### JavaScript's Unpredictable Moments and Headaches
+
+Many times, while coding, I've encountered a JavaScript behavior that left me puzzled. It's the language's way of keeping things interesting, for better or worse.
+
+To illustrate this point, I took on a quiz that puts your JavaScript knowledge to the test with some of the most unexpected questions you can imagine...
+
+## Quiz to Test Your JavaScript Knowledge 🧠
+
+Ready to put your JavaScript mastery into the test? I took on a quiz that challenges your understanding of these JS quirky behaviors.
+
+> And let me tell you, it was a delightful brain teaser!
+
+The quiz, crafted by the clever [Jacob Bergdahl](https://jacobbergdahl.com/), wasn't just any test 🤯... It was a journey through 25 questions that made me question my understanding of JavaScript. With each question, I had to predict the output of JavaScript expressions that were anything but ordinary.
+
+> The Quiz That Challenges Every Programmer
+
+<br />
+<a href="https://jsisweird.com/" target="_blank">
+  <div className="hover:cursor-pointer flex justify-center items-center">
+    <Image
+      src="/blog/javascript-is-weird/quiz.png"
+      width="1920"
+      height="0"
+      className="w-full h-auto"
+      alt="jsiswerid.com quiz"
+    />
+  </div>
+</a>
+
+### My Live Reaction: Expect the Unexpected 😄
+
+🎥 I recorded my live reaction to taking this quiz, and it was a mix of fun, confusion, and learning. While I won't spoil the fun here, let's just say JavaScript keeps you on your toes!
+
+> **Let's admit, JavaScript can be a box of surprises!**
+
+<br />
+<div className="flex justify-center">
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/sz4FANqmB38?si=EAq30VAQt-zFkBOR"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen; web-share"
+  ></iframe>
+</div>
+
+### Take the Quiz Yourself!
+
+Before you watch my reactions, why not give the quiz a try yourself? **Taking the quiz was an experience in itself!** It's a fantastic way to see where you stand with JavaScript's quirky side 👀.
+
+**👉 Start the challenge: [JSisWeird.com](https://jsisweird.com/) Quiz**
+
+### The Joy of Learning JavaScript
+
+Let's not forget the humor... JavaScript's unexpected outputs often bring a much-needed laugh during a long day of coding 😆. It's a reminder that programming is as much about problem-solving as it is about joy.
+
+## Wrap Up
+
+JavaScript's weirdness is part of its charm and challenge. It's what makes learning and mastering the language an ongoing adventure 👌. As developers, we continuously adapt and learn, turning quirks into quality code.
+
+How did you do on the quiz? Share your scores and thoughts in [this tweet](https://x.com/choubari_/status/1551244322577711104?s=20)!
+
+Happy coding, and may your console always log the expected output 😉.
