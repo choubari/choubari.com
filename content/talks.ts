@@ -3,6 +3,23 @@ import { Talk } from "@/types";
 export const Talks: Talk[] = [
   {
     featured: true,
+    title: "Partial Prerendering: Hype or Innovation?",
+    thumbnail: "reactparis-lineup.png",
+    date: "March 22, 2024",
+    duration: "30min.",
+    description:
+      "In this rapidly evolving world of web development, Next.js recently introduced Partial Prerendering (PPR), a new rendering model for web applications. But what exactly lies behind this concept?",
+    presentations: [
+      {
+        host: "React Paris",
+        hostLink: "https://react.paris/#speakers",
+        country: "🇫🇷",
+        city: "Paris",
+      },
+    ],
+  },
+  {
+    featured: true,
     title: "React Server Components 101",
     thumbnail: "ReactServerComponents101-devoxxma.jpg",
     date: "October 11, 2023",
@@ -131,7 +148,6 @@ export const Talks: Talk[] = [
     ],
   },
   {
-    featured: true,
     title: `How to make a "perfect" git commit`,
     thumbnail: "gitcommit-devoxxma-footage.jpg",
     date: "October 5, 2022",
