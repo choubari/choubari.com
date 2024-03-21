@@ -13,6 +13,11 @@ export const Talks: Talk[] = [
       {
         host: "React Paris",
         hostLink: "https://react.paris/#speakers",
+        slides:
+          "https://docs.google.com/presentation/d/1ZYtCOUfGCvUO5kFDbFWoGsmJbIJrHGnimuS_4WsKkEI/edit?usp=sharing",
+        demoCode: "https://github.com/choubari/partial-prerendering-demo",
+        demoLink: "https://partial-pre-rendering.vercel.app/",
+
         country: "🇫🇷",
         city: "Paris",
       },
