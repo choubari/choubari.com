@@ -44,6 +44,12 @@ export const Talks: Talk[] = [
         country: "🇲🇦",
         city: "Agadir",
       },
+      {
+        host: "Devoxx France",
+        hostLink: "https://www.devoxx.fr/schedule/talk/?id=47585",
+        country: "🇫🇷",
+        city: "Paris (soon)",
+      },
     ],
   },
   {
