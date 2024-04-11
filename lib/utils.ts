@@ -17,8 +17,8 @@ export const fetchGithubRepos = async () => {
 };
 
 export const getTwitterFollowers = () => {
-  // TODO: fetch API and get Followers count
-  return 1505;
+  // TODO: find a way to get Followers count from Twtter API
+  return 2030;
 };
 
 export const getGithubFollowers = async () => {
@@ -29,32 +29,32 @@ export const getGithubFollowers = async () => {
 };
 
 export const getLinkedinFollowers = async () => {
-  // TODO: fetch API and get Followers count
-  return 4538;
+  // TODO: find a way to get Followers count from Linkedin API
+  return 5134;
 };
 
 export const getYoutubeFollowers = async () => {
-  // TODO: fetch API and get Followers count
-  return 1124;
+  // TODO: find a way to get Followers count from YouTube API
+  return 1241;
 };
 
 export const getInstagramFollowers = async () => {
-  // TODO: fetch API and get Followers count
+  // TODO: find a way to get Followers count from Instagram API
   return 3015;
 };
 
 export const getFacebookFollowers = async () => {
-  // TODO: fetch API and get Followers count
+  // TODO: find a way to get Followers count from Facebook API
   return 374;
 };
 
 export const getTiktokFollowers = async () => {
-  // TODO: fetch API and get Followers count
+  // TODO: find a way to get Followers count from TikTok API
   return 18;
 };
 
 export const getNewsletterFollowers = async () => {
-  // TODO: fetch API and get Followers count
+  // TODO: find a way to get Followers count from Beehiiv API
   return 25;
 };
 
