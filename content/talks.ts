@@ -33,6 +33,17 @@ export const Talks: Talk[] = [
       "React Server Components: an exciting new feature that have huge implications on page load performance, bundle size, and how we write React applications in the near future. We'll explore RSC's architecture and its core concepts, along with practical use-cases illustrating RSC implementation and benefits. You will learn how to write tomorrow's React Applications with Server Components and understand in depth what the React team has been working on.",
     presentations: [
       {
+        host: "Devoxx France",
+        hostLink: "https://www.devoxx.fr/schedule/talk/?id=47585",
+        slides:
+          "https://docs.google.com/presentation/d/1MQTIpdAl9wTceNu2QrZaa-TmRFeng-qPWPCJiDnGzrY/edit?usp=sharing",
+        demoCode:
+          "https://github.com/choubari/react-server-components-101-demo",
+        demoLink: "https://react-server-components-101-demo.vercel.app/",
+        country: "🇫🇷",
+        city: "Paris",
+      },
+      {
         host: "Devoxx Morocco",
         hostLink: "https://devoxx.ma/talk/?id=22005",
         slides:
@@ -43,12 +54,6 @@ export const Talks: Talk[] = [
 
         country: "🇲🇦",
         city: "Agadir",
-      },
-      {
-        host: "Devoxx France",
-        hostLink: "https://www.devoxx.fr/schedule/talk/?id=47585",
-        country: "🇫🇷",
-        city: "Paris (soon)",
       },
     ],
   },
