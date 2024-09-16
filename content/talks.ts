@@ -3,6 +3,24 @@ import { Talk } from "@/types";
 export const Talks: Talk[] = [
   {
     featured: true,
+    title: "React Server Components Deep Dive",
+    thumbnail: "ReactServerComponentsCourse-oreilly.png",
+    date: "August 28, 2024",
+    duration: "180min.",
+    description:
+      "How to leverage server-side rendering and Server Components to build efficient web applications",
+    presentations: [
+      {
+        host: "O'Reilly Media",
+        hostLink:
+          "https://www.oreilly.com/live-events/react-server-components-deep-dive/0642572003766/",
+        country: "🌐",
+        city: "Online",
+      },
+    ],
+  },
+  {
+    featured: true,
     title: "Partial Prerendering: Hype or Innovation?",
     thumbnail: "reactparis-lineup.png",
     date: "March 22, 2024",
@@ -55,10 +73,15 @@ export const Talks: Talk[] = [
         country: "🇲🇦",
         city: "Agadir",
       },
+      {
+        host: "React Paris Meetup",
+        hostLink: "https://www.meetup.com/react-paris/events/300756193/",
+        country: "🇫🇷",
+        city: "Paris",
+      },
     ],
   },
   {
-    featured: true,
     title: "Modern Web Development with Next.js 13",
     thumbnail: "nextjs-react-framework-devoxxma.jpg",
     date: "October 11, 2023",
