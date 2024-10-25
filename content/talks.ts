@@ -8,7 +8,7 @@ export const Talks: Talk[] = [
     date: "August 28, 2024",
     duration: "180min.",
     description:
-      "How to leverage server-side rendering and Server Components to build efficient web applications",
+      " In this live course session of 3 hours with O'Reilly Media we will see how to leverage server-side rendering and Server Components to build efficient web applications",
     presentations: [
       {
         host: "O'Reilly Media",
@@ -45,11 +45,30 @@ export const Talks: Talk[] = [
     featured: true,
     title: "React Server Components 101",
     thumbnail: "ReactServerComponents101-devoxxma.jpg",
-    date: "October 11, 2023",
+    date: "October 25, 2024",
+    // date: "October 11, 2023",
     duration: "25min.",
     description:
       "React Server Components: an exciting new feature that have huge implications on page load performance, bundle size, and how we write React applications in the near future. We'll explore RSC's architecture and its core concepts, along with practical use-cases illustrating RSC implementation and benefits. You will learn how to write tomorrow's React Applications with Server Components and understand in depth what the React team has been working on.",
     presentations: [
+      {
+        host: "ReactJS Day",
+        hostLink:
+          "https://2024.reactjsday.it/schedule/#ReactServerComponents101",
+        slides:
+          "https://docs.google.com/presentation/d/1f6527uoa7hDLc4f_gT9kYI9xge5qsPx7nMEW8eLxJyI/edit?usp=sharing",
+        demoCode:
+          "https://github.com/choubari/react-server-components-101-demo",
+        demoLink: "https://react-server-components-101-demo.vercel.app/",
+        country: "🇮🇹",
+        city: "Verona",
+      },
+      {
+        host: "React Paris Meetup",
+        hostLink: "https://www.meetup.com/react-paris/events/300756193/",
+        country: "🇫🇷",
+        city: "Paris",
+      },
       {
         host: "Devoxx France",
         hostLink: "https://www.devoxx.fr/schedule/talk/?id=47585",
@@ -69,15 +88,8 @@ export const Talks: Talk[] = [
         demoCode:
           "https://github.com/choubari/react-server-components-101-demo",
         demoLink: "https://react-server-components-101-demo.vercel.app/",
-
         country: "🇲🇦",
         city: "Agadir",
-      },
-      {
-        host: "React Paris Meetup",
-        hostLink: "https://www.meetup.com/react-paris/events/300756193/",
-        country: "🇫🇷",
-        city: "Paris",
       },
     ],
   },

@@ -54,8 +54,7 @@ const TalkCard: React.FC<TalkCardProps> = ({ talk }) => {
           >
             {presentation.host}
           </a>
-          , {presentation.country}
-          {presentation.city}
+          , {presentation.country} {presentation.city}
           {presentation.video && (
             <a
               className="hover:underline"
