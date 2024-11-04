@@ -20,6 +20,23 @@ export const Talks: Talk[] = [
     ],
   },
   {
+    title: "DevRel and tech talks - Ep #177",
+    thumbnail: "geeksblabla-177.jpg",
+    date: "April 21, 2024",
+    duration: "195min.",
+    description:
+      "In this episode, we shared our experiences as public speakers. We explained the devrel job, challenges and tips to become a better speaker..",
+    presentations: [
+      {
+        host: "GeeksBlaBla Podcast",
+        hostLink: "https://geeksblabla.com/",
+        video: "https://www.youtube.com/live/8uKEwWbgRBc",
+        country: "🌐",
+        city: "Online",
+      },
+    ],
+  },
+  {
     featured: true,
     title: "Partial Prerendering: Hype or Innovation?",
     thumbnail: "reactparis-lineup.png",
