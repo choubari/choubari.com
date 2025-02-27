@@ -14,26 +14,24 @@ export type NavLink = {
   href: string;
 };
 
-export type Presentation = {
+export type Talk = {
+  featured?: boolean;
+  title: string;
+  description?: string;
+  // language?: string;
+  // talkType?: string;
   host: string;
-  hostLink?: string;
   country: string;
   city: string;
+  hostLink?: string;
+  date: string;
+  duration?: string;
+  pictures: string[];
   video?: string;
   slides?: string;
   demoCode?: string;
   demoLink?: string;
   docs?: string;
-};
-
-export type Talk = {
-  featured?: boolean;
-  title: string;
-  thumbnail: string;
-  date: string;
-  duration?: string;
-  description: string;
-  presentations: Presentation[];
 };
 
 export type Technology =
