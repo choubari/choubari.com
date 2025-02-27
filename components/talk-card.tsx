@@ -7,11 +7,6 @@ type TalkCardProps = {
 };
 
 const TalkCard: React.FC<TalkCardProps> = ({ talk }) => {
-  const isTextLong = talk.description?.length > 150;
-  const trimmedText = isTextLong
-    ? `${talk.description.substring(0, 150)}...`
-    : talk.description;
-
   return (
     <div className="flex flex-col shadow-lg rounded-lg dark:bg-dark bg-lighter p-4 transform transition-all duration-300 ease-in-out overflow-visible group">
       <div className="relative h-52 w-full rounded-t-lg">
@@ -56,13 +51,6 @@ const TalkCard: React.FC<TalkCardProps> = ({ talk }) => {
 
         <p className="text-md font-medium mt-5 dark:text-light text-darker opacity-90">
           🎤 {talk.title}
-        </p>
-
-        <p
-          className={`text-sm my-2 dark:text-light text-dark w-full opacity-80`}
-          title={isTextLong ? talk.description : ""}
-        >
-          {trimmedText}
         </p>
       </div>
 

@@ -14,12 +14,18 @@ export type NavLink = {
   href: string;
 };
 
+export type TalkType =
+  | "conference"
+  | "meetup"
+  | "podcast"
+  | "webinar"
+  | "workshop";
+
 export type Talk = {
   featured?: boolean;
   title: string;
-  description?: string;
   // language?: string;
-  // talkType?: string;
+  talkType: TalkType;
   host: string;
   country: string;
   city: string;
