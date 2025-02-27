@@ -91,6 +91,7 @@ export const Talks: Talk[] = [
     video: "https://www.youtube.com/live/8uKEwWbgRBc",
   },
   {
+    featured: true,
     title: "React Server Components 101",
     host: "Devoxx France",
     country: "🇫🇷",
@@ -143,6 +144,7 @@ export const Talks: Talk[] = [
     demoLink: "https://react-server-components-101-demo.vercel.app/",
   },
   {
+    featured: true,
     title: "Modern Web Development with Next.js 13",
     host: "Devoxx Morocco",
     country: "🇲🇦",
@@ -287,7 +289,7 @@ export const Talks: Talk[] = [
     video: "https://www.youtube.com/live/4_h-lxi3GlU?si=3HSQm7TMOAgsGsoH",
   },
   {
-    title: "Introduction Game Dev",
+    title: "Introduction to Game Dev",
     host: "ENSIAS IT Club",
     country: "🌐",
     city: "Online",

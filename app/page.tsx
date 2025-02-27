@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <FeaturedProjects />
+      {/* <FeaturedProjects /> */}
       <FeaturedTalks />
       {/* @ts-expect-error Async Server Component */}
       <FeaturedRepos />
