@@ -7,7 +7,7 @@ export const Talks: Talk[] = [
     host: "React Africa",
     country: "🇲🇦",
     city: "Casablanca",
-    hostLink: "https://react-africa.com/#schedule",
+    hostLink: "https://react-africa.com/",
     pictures: [
       "react-africa/demo.jpeg",
       "react-africa/left-angle.jpg",
@@ -42,10 +42,11 @@ export const Talks: Talk[] = [
     host: "ReactJS Day",
     country: "🇮🇹",
     city: "Verona",
-    hostLink: "https://2024.reactjsday.it/schedule/#ReactServerComponents101",
+    hostLink:
+      "https://2024.reactjsday.it/talks_speakers/#ReactServerComponents101",
     pictures: ["reactjs-day/full-room.png"],
     date: "October 25, 2024",
-    duration: "25min.",
+    duration: "45min.",
     // description: "",
     slides:
       "https://docs.google.com/presentation/d/1f6527uoa7hDLc4f_gT9kYI9xge5qsPx7nMEW8eLxJyI/edit?usp=sharing",
@@ -60,7 +61,10 @@ export const Talks: Talk[] = [
     city: "Online",
     hostLink:
       "https://www.oreilly.com/live-events/react-server-components-deep-dive/0642572003766/",
-    pictures: ["oreilly-media/ReactServerComponentsCourse-oreilly.png"],
+    pictures: [
+      "oreilly-media/oreilly-event-page.png",
+      "oreilly-media/ReactServerComponentsCourse-oreilly.png",
+    ],
     date: "August 28, 2024",
     duration: "180min.",
     // description:
@@ -82,7 +86,8 @@ export const Talks: Talk[] = [
     host: "GeeksBlaBla Podcast",
     country: "🌐",
     city: "Online",
-    hostLink: "https://geeksblabla.com/",
+    hostLink:
+      "https://geeksblabla.community/podcast/devrel-and-tech-talks.html",
     pictures: ["geeksblabla/devrel-tech-talks.jpg"],
     date: "April 21, 2024",
     duration: "195min.",
@@ -105,6 +110,7 @@ export const Talks: Talk[] = [
       "https://docs.google.com/presentation/d/1MQTIpdAl9wTceNu2QrZaa-TmRFeng-qPWPCJiDnGzrY/edit?usp=sharing",
     demoCode: "https://github.com/choubari/react-server-components-101-demo",
     demoLink: "https://react-server-components-101-demo.vercel.app/",
+    video: "https://youtu.be/sPoo1Zwh64w",
   },
   {
     featured: true,
@@ -112,7 +118,7 @@ export const Talks: Talk[] = [
     host: "React Paris",
     country: "🇫🇷",
     city: "Paris",
-    hostLink: "https://react.paris/#speakers",
+    hostLink: "https://react.paris/",
     pictures: [
       "react-paris/full-room.png",
       "react-paris/left-angle.jpg",
@@ -126,13 +132,14 @@ export const Talks: Talk[] = [
       "https://docs.google.com/presentation/d/1ZYtCOUfGCvUO5kFDbFWoGsmJbIJrHGnimuS_4WsKkEI/edit?usp=sharing",
     demoCode: "https://github.com/choubari/partial-prerendering-demo",
     demoLink: "https://partial-pre-rendering.vercel.app/",
+    video: "https://youtu.be/1Xplez2KRaI",
   },
   {
     title: "React Server Components 101",
     host: "Devoxx Morocco",
     country: "🇲🇦",
     city: "Agadir",
-    hostLink: "https://devoxx.ma/talk/?id=22005",
+    hostLink: "https://devoxx.ma/",
     pictures: ["devoxx-morocco/2023/ReactServerComponents101-devoxxma.jpg"],
     date: "October 11, 2023",
     duration: "25min.",
@@ -149,7 +156,7 @@ export const Talks: Talk[] = [
     host: "Devoxx Morocco",
     country: "🇲🇦",
     city: "Agadir",
-    hostLink: "https://devoxx.ma/talk/?id=25435",
+    hostLink: "https://devoxx.ma/",
     pictures: ["devoxx-morocco/2023/nextjs-react-framework-devoxxma.jpg"],
     date: "October 11, 2023",
     duration: "120min.",
@@ -163,10 +170,10 @@ export const Talks: Talk[] = [
   },
   {
     title: "Back To School - GeeksBlaBla",
-    host: "GeeksBlaBla",
+    host: "GeeksBlaBla Podcast",
     country: "🌐",
     city: "Online",
-    hostLink: "https://geeksblabla.com/",
+    hostLink: "https://geeksblabla.community/podcast/back-to-school",
     pictures: ["geeksblabla/backtoschool.jpg"],
     date: "September 3, 2023",
     duration: "90min.",
@@ -194,16 +201,33 @@ export const Talks: Talk[] = [
   },
   {
     title: "GeeksBlaBla - AMA & Tech News #23",
-    host: "GeeksBlaBla",
+    host: "GeeksBlaBla Podcast",
     country: "🌐",
     city: "Online",
-    hostLink: "https://geeksblabla.com/",
+    hostLink: "https://geeksblabla.community/podcast/tech-news--ama-23",
     pictures: ["geeksblabla/ama-23.jpg"],
     date: "March 27, 2023",
     duration: "150min.",
     // description:
     // "In this AMA session, we discussed our learning plans and productivity levels during Ramadan. Then we shared the latest Tech News (GPT-4, Bard, Copilot, ChatGPT Plugins...), discussing their impacts on education, software development and our future, while answering the audience questions.",
     video: "https://www.youtube.com/live/0x1a-7JK_co?si=XqwXQqOKRKV67w6i",
+  },
+  {
+    title: 'How to make a "perfect" git commit',
+    host: "Blabla Conf",
+    country: "🌐",
+    city: "Online",
+    hostLink: "https://www.blablaconf.com/",
+    pictures: ["geeksblabla/gitcommit-blablaconf.jpg"],
+    date: "December 21, 2022",
+    duration: "25min.",
+    // description:
+    // 'Even if perfect things don\'t exist, chasing perfection can play an important role to create new and improve existing workflows, optimizing them to our needs and automating recurring tasks. In this session, I will share with you how to set your pre-commit workflow, create guidelines and avoid mistakes so you can have at the end a "perfect" git commit. The session is beginner friendly, it requires some prerequisites in git.',
+    video: "https://youtu.be/-_kW5E4gGHA",
+    slides:
+      "https://docs.google.com/presentation/d/14bfZYD1JQni5mBJSB6kh-bIA3mUudwQKJ9wDYMbN-0E/edit?usp=share_link",
+    demoCode:
+      "https://gist.github.com/choubari/c89b685c334939d581489c537b5bda2f",
   },
   {
     title: "Best Practices for Better Accessibility",
@@ -261,26 +285,11 @@ export const Talks: Talk[] = [
       "https://gist.github.com/choubari/c89b685c334939d581489c537b5bda2f",
   },
   {
-    title: 'How to make a "perfect" git commit',
-    host: "Blabla Conf",
-    country: "🌐",
-    city: "Online",
-    hostLink: "https://www.blablaconf.com/session/394967",
-    pictures: ["geeksblabla/gitcommit-blablaconf.jpg"],
-    date: "October 5, 2022",
-    duration: "25min.",
-    // description:
-    // 'Even if perfect things don\'t exist, chasing perfection can play an important role to create new and improve existing workflows, optimizing them to our needs and automating recurring tasks. In this session, I will share with you how to set your pre-commit workflow, create guidelines and avoid mistakes so you can have at the end a "perfect" git commit. The session is beginner friendly, it requires some prerequisites in git.',
-    slides:
-      "https://docs.google.com/presentation/d/14bfZYD1JQni5mBJSB6kh-bIA3mUudwQKJ9wDYMbN-0E/edit?usp=share_link",
-    video: "https://youtu.be/-_kW5E4gGHA",
-  },
-  {
     title: "GeeksBlaBla - AMA & Tech News #15",
-    host: "GeeksBlaBla",
+    host: "GeeksBlaBla Podcast",
     country: "🌐",
     city: "Online",
-    hostLink: "https://geeksblabla.com/",
+    hostLink: "https://geeksblabla.community/podcast/tech-news--ama-15",
     pictures: ["geeksblabla/ama-15.jpg"],
     date: "January 30, 2022",
     duration: "120min.",
