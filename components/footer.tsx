@@ -51,7 +51,12 @@ export default function Footer() {
             Newsletter
             <span className="text-4xl leading-3 text-accent">.</span>
           </h2>
-          <p className="pb-3">Occasional updates, unsubscribe anytime.</p>
+          <p className="pb-3">
+            <Link href={"/newsletter"} className="underline">
+              Occasional updates
+            </Link>
+            , unsubscribe anytime.
+          </p>
           <NewsletterBox type={"slim"} />
         </div>
       </div>

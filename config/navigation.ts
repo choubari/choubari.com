@@ -22,6 +22,10 @@ export const FooterAbout: NavLink[] = [
   // { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Testimonials", href: "/testimonials" },
+
+  { label: "Open Source", href: "/oss" },
+  { label: "Content Creation", href: "/creator" },
+
   { label: "Contact", href: "/contact" },
 ];
 export const FooterProjects: NavLink[] = [
