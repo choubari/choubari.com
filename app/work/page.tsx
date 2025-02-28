@@ -10,8 +10,7 @@ export default function Work() {
           <span className="text-4xl leading-3 text-accent">.</span>
         </h1>
         <p>
-          Here are some of the projects I've worked on, utilizing a variety of
-          technologies and frameworks.
+          Legacy projects that I've worked on before 2023. (updates coming soon)
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">

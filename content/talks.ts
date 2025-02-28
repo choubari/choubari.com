@@ -1,5 +1,13 @@
 import { Talk } from "@/types";
 
+export const TALK_TYPES = [
+  "Conference",
+  "Workshop",
+  "Meetup",
+  "Webinar",
+  "Podcast",
+];
+
 export const Talks: Talk[] = [
   {
     featured: true,
@@ -7,7 +15,7 @@ export const Talks: Talk[] = [
     host: "React Africa",
     country: "🇲🇦",
     city: "Casablanca",
-    talkType: "conference",
+    talkType: "Conference",
     hostLink: "https://react-africa.com/",
     pictures: [
       "react-africa/demo.jpeg",
@@ -28,7 +36,7 @@ export const Talks: Talk[] = [
     host: "Packmind",
     country: "🌐",
     city: "Online",
-    talkType: "webinar",
+    talkType: "Webinar",
     hostLink:
       "https://www.linkedin.com/posts/cedricteyton_et-si-on-parlait-de-bonnes-pratiques-react-activity-7257402202837688321-7xFR",
     pictures: ["others/packmind/webinar-flyer.jpg"],
@@ -42,7 +50,7 @@ export const Talks: Talk[] = [
     host: "ReactJS Day",
     country: "🇮🇹",
     city: "Verona",
-    talkType: "conference",
+    talkType: "Conference",
     hostLink:
       "https://2024.reactjsday.it/talks_speakers/#ReactServerComponents101",
     pictures: ["reactjs-day/full-room.png"],
@@ -59,7 +67,7 @@ export const Talks: Talk[] = [
     host: "O'Reilly Media",
     country: "🌐",
     city: "Online",
-    talkType: "workshop",
+    talkType: "Workshop",
     hostLink:
       "https://www.oreilly.com/live-events/react-server-components-deep-dive/0642572003766/",
     pictures: [
@@ -74,18 +82,18 @@ export const Talks: Talk[] = [
     host: "React Paris Meetup",
     country: "🇫🇷",
     city: "Paris",
-    talkType: "meetup",
+    talkType: "Meetup",
     hostLink: "https://www.meetup.com/react-paris/events/300756193/",
     pictures: ["react-paris/react-paris-meetup.png"],
     date: "May 28, 2024",
     duration: "25min.",
   },
   {
-    title: "DevRel and tech talks - Ep #177",
-    host: "GeeksBlaBla Podcast",
+    title: "DevRel and tech talks",
+    host: "GeeksBlaBla #177",
     country: "🌐",
     city: "Online",
-    talkType: "podcast",
+    talkType: "Podcast",
     hostLink:
       "https://geeksblabla.community/podcast/devrel-and-tech-talks.html",
     pictures: ["geeksblabla/devrel-tech-talks.jpg"],
@@ -99,7 +107,7 @@ export const Talks: Talk[] = [
     host: "Devoxx France",
     country: "🇫🇷",
     city: "Paris",
-    talkType: "conference",
+    talkType: "Conference",
     hostLink: "https://www.devoxx.fr/schedule/talk/?id=47585",
     pictures: ["devoxx-france/in-motion.png"],
     date: "April 18, 2024",
@@ -116,7 +124,7 @@ export const Talks: Talk[] = [
     host: "React Paris",
     country: "🇫🇷",
     city: "Paris",
-    talkType: "conference",
+    talkType: "Conference",
     hostLink: "https://react.paris/",
     pictures: [
       "react-paris/full-room.png",
@@ -136,7 +144,7 @@ export const Talks: Talk[] = [
     host: "Devoxx Morocco",
     country: "🇲🇦",
     city: "Agadir",
-    talkType: "conference",
+    talkType: "Conference",
     hostLink: "https://devoxx.ma/",
     pictures: ["devoxx-morocco/2023/ReactServerComponents101-devoxxma.jpg"],
     date: "October 11, 2023",
@@ -152,7 +160,7 @@ export const Talks: Talk[] = [
     host: "Devoxx Morocco",
     country: "🇲🇦",
     city: "Agadir",
-    talkType: "workshop",
+    talkType: "Workshop",
     hostLink: "https://devoxx.ma/",
     pictures: ["devoxx-morocco/2023/nextjs-react-framework-devoxxma.jpg"],
     date: "October 11, 2023",
@@ -164,11 +172,11 @@ export const Talks: Talk[] = [
     docs: "https://nextjs.choubari.com/",
   },
   {
-    title: "Back To School - GeeksBlaBla",
-    host: "GeeksBlaBla Podcast",
+    title: "Back To School",
+    host: "GeeksBlaBla #155",
     country: "🌐",
     city: "Online",
-    talkType: "podcast",
+    talkType: "Podcast",
     hostLink: "https://geeksblabla.community/podcast/back-to-school",
     pictures: ["geeksblabla/backtoschool.jpg"],
     date: "September 3, 2023",
@@ -180,7 +188,7 @@ export const Talks: Talk[] = [
     host: "Biztech Morocco",
     country: "🌐",
     city: "Online",
-    talkType: "webinar",
+    talkType: "Webinar",
     hostLink:
       "https://www.linkedin.com/feed/update/urn:li:activity:7065016707844591616?utm_source=share",
     pictures: ["others/biztech/nextjs-biztech.jpg"],
@@ -193,11 +201,11 @@ export const Talks: Talk[] = [
     demoLink: "https://nextjs13-demo-app.vercel.app/",
   },
   {
-    title: "GeeksBlaBla - AMA & Tech News #23",
-    host: "GeeksBlaBla Podcast",
+    title: "AMA & Tech News #23",
+    host: "GeeksBlaBla",
     country: "🌐",
     city: "Online",
-    talkType: "podcast",
+    talkType: "Podcast",
     hostLink: "https://geeksblabla.community/podcast/tech-news--ama-23",
     pictures: ["geeksblabla/ama-23.jpg"],
     date: "March 27, 2023",
@@ -209,7 +217,7 @@ export const Talks: Talk[] = [
     host: "Blabla Conf",
     country: "🌐",
     city: "Online",
-    talkType: "webinar",
+    talkType: "Webinar",
     hostLink: "https://www.blablaconf.com/",
     pictures: ["geeksblabla/gitcommit-blablaconf.jpg"],
     date: "December 21, 2022",
@@ -225,7 +233,7 @@ export const Talks: Talk[] = [
     host: "ISoc Accessibility Standing Group",
     country: "🌐",
     city: "Online",
-    talkType: "webinar",
+    talkType: "Webinar",
     hostLink: "https://www.a11ysig.org/accessniger/",
     pictures: [
       "others/isoc-a11y/a11y-isoc-flyer.jpg",
@@ -243,7 +251,7 @@ export const Talks: Talk[] = [
     host: "Devoxx Morocco",
     country: "🇲🇦",
     city: "Agadir",
-    talkType: "conference",
+    talkType: "Conference",
     hostLink: "https://devoxx.ma/talk/?id=10482",
     pictures: [
       "devoxx-morocco/2022/a11y-devoxxma-footage.jpg",
@@ -259,7 +267,7 @@ export const Talks: Talk[] = [
     host: "Devoxx Morocco",
     country: "🇲🇦",
     city: "Agadir",
-    talkType: "conference",
+    talkType: "Conference",
     hostLink: "https://devoxx.ma/talk/?id=10481",
     pictures: [
       "devoxx-morocco/2022/gitcommit-devoxxma-footage.jpg",
@@ -273,11 +281,11 @@ export const Talks: Talk[] = [
       "https://gist.github.com/choubari/c89b685c334939d581489c537b5bda2f",
   },
   {
-    title: "GeeksBlaBla - AMA & Tech News #15",
-    host: "GeeksBlaBla Podcast",
+    title: "AMA & Tech News #15",
+    host: "GeeksBlaBla",
     country: "🌐",
     city: "Online",
-    talkType: "podcast",
+    talkType: "Podcast",
     hostLink: "https://geeksblabla.community/podcast/tech-news--ama-15",
     pictures: ["geeksblabla/ama-15.jpg"],
     date: "January 30, 2022",
@@ -289,7 +297,7 @@ export const Talks: Talk[] = [
     host: "ENSIAS IT Club",
     country: "🌐",
     city: "Online",
-    talkType: "podcast",
+    talkType: "Podcast",
     hostLink:
       "https://www.linkedin.com/feed/update/urn:li:activity:6871566461639368704/",
     pictures: ["others/school-clubs/gamedev-ittalk.jpg"],
@@ -302,7 +310,7 @@ export const Talks: Talk[] = [
     host: "IEEE ENSIAS Student Branch",
     country: "🌐",
     city: "Online",
-    talkType: "webinar",
+    talkType: "Webinar",
     hostLink:
       "https://twitter.com/EnsiasSb/status/1349696348606652421?t=asi7OMRJUtanYaXag41ncA&s=08",
     pictures: ["others/school-clubs/latex-ieee.jpg"],
@@ -316,7 +324,7 @@ export const Talks: Talk[] = [
     host: "IEEE ENSIAS Student Branch",
     country: "🌐",
     city: "Online",
-    talkType: "webinar",
+    talkType: "Webinar",
     pictures: ["others/school-clubs/git-ieee.jpg"],
     date: "January 12, 2021",
     duration: "120min.",

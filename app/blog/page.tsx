@@ -20,7 +20,7 @@ export default function Blog() {
           Blog
           <span className="text-4xl leading-3 text-accent">.</span>
         </h1>
-        <p>The one and the only place to read my confessions.</p>
+        <p>Unfrequent thoughts, ideas, and experiences.</p>
       </div>
       {posts?.length ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4 mx-4 my-6">

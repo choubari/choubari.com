@@ -24,20 +24,15 @@ export default function Footer() {
         strategy="lazyOnload"
       ></Script>
       <div className="mx-auto px-8 pt-5 lg:px-8 lg:max-w-7xl grid grid-cols-1 md:grid-cols-12 gap-8">
-        <div className="md:col-span-4 md:space-y-4">
+        <div className="md:col-span-3 md:space-y-4">
           <Link href="/" aria-label="Choubari's Home Page">
             <Logo />
           </Link>
-          <p className="pb-3">
-            I turn ideas into reality with the power of software engineering,
-            and I share my stories as a content creator.
-          </p>
-          <NewsletterBox type={"slim"} />
         </div>
         <div className="hidden md:block md:col-span-2 space-y-4"></div>
         <div className="md:col-span-2 md:space-y-4">
           <h2 className="font-serif text-xl font-bold mb-2">
-            General
+            Links
             <span className="text-4xl leading-3 text-accent">.</span>
           </h2>
           <ul>
@@ -51,41 +46,13 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-
-        <div className="md:col-span-2 md:space-y-4">
+        <div className="md:col-span-4 md:space-y-4">
           <h2 className="font-serif text-xl font-bold mb-2">
-            Projects
+            Newsletter
             <span className="text-4xl leading-3 text-accent">.</span>
           </h2>
-          <ul>
-            {FooterProjects.map((link) => (
-              <li
-                key={link.label}
-                className="hover:underline hover:text-accent"
-              >
-                <Link href={link.href}>{link.label}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="md:col-span-2 md:space-y-4">
-          <h2 className="font-serif text-xl font-bold mb-2">
-            Socials
-            <span className="text-4xl leading-3 text-accent">.</span>
-          </h2>
-          <ul>
-            {FooterSocials.map((link) => (
-              <li
-                key={link.label}
-                className="hover:underline hover:text-accent"
-              >
-                <Link href={link.href} target="_blank">
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <p className="pb-3">Occasional updates, unsubscribe anytime.</p>
+          <NewsletterBox type={"slim"} />
         </div>
       </div>
       <hr className="h-px border-0 opacity-30 bg-grey mt-8 mb-4" />

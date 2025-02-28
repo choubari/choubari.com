@@ -23,6 +23,9 @@ const TalkCard: React.FC<TalkCardProps> = ({ talk }) => {
         <div className="absolute -bottom-5 right-2 rounded-full bg-accent p-2 text-dark font-medium">
           ⏱️{talk.duration}
         </div>
+        <div className="absolute top-2 right-2 rounded-md bg-gray-300 px-2 py-1 text-black font-medium text-xs">
+          {talk.talkType}
+        </div>
       </div>
       <div>
         <h2 className="text-lg font-bold font-serif mt-5 dark:text-light text-darker">

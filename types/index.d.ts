@@ -14,12 +14,24 @@ export type NavLink = {
   href: string;
 };
 
-export type TalkType =
-  | "conference"
-  | "meetup"
-  | "podcast"
-  | "webinar"
-  | "workshop";
+// export type TalkType =
+//   | "Conference"
+//   | "Meetup"
+//   | "Podcast"
+//   | "Webinar"
+//   | "Workshop";
+
+// next.js can't export const in type module
+// export const TALK_TYPES = [
+//   "Conference",
+//   "Meetup",
+//   "Podcast",
+//   "Webinar",
+//   "Workshop",
+// ] as const;
+
+// todo: fix this, TALK_TYPES is considered as any below
+export type TalkType = (typeof TALK_TYPES)[number];
 
 export type Talk = {
   featured?: boolean;
