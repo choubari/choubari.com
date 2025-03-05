@@ -76,12 +76,16 @@ export default function Work() {
           </div>
         </div>
 
-        {/* internal pages */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
+        {/* new tab links */}
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 mt-4">
           {[
             { title: "Newsletter", href: "/newsletter" },
             { title: "Open Source", href: "/oss" },
             { title: "Content Creation", href: "/creator" },
+            {
+              title: "Digital Products",
+              href: "https://choubari.gumroad.com/",
+            },
           ].map((item) => (
             <a
               key={item.title}

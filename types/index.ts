@@ -68,9 +68,9 @@ export type CodingProject = {
 export enum FEEDBACK_CATEGORY {
   WORK = "Work & Expertise",
   LEADERSHIP = "Leadership & Soft Skills",
-  DESIGN = "Design & Creativity",
-  COMMUNITY = "Community & Volunteering",
   GROWTH = "Growth & Learning",
+  COMMUNITY = "Community & Volunteering",
+  DESIGN = "Design & Creativity",
 }
 
 export type Feedback = {
