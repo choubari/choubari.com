@@ -1,6 +1,6 @@
-import { Testimonial } from "@/types";
+import { Feedback, FEEDBACK_CATEGORY } from "@/types";
 
-export const Testimonials: Testimonial[] = [
+export const Testimonials: Feedback[] = [
   {
     name: "François Souterelle",
     message:
@@ -8,6 +8,14 @@ export const Testimonials: Testimonial[] = [
     position: "CTO",
     company: "Zenpark",
     photo: "françois.jpg",
+    source: "Linkedin",
+    link: "https://www.linkedin.com/in/choubari/details/recommendations/",
+    date: "August 2022",
+    category: [
+      FEEDBACK_CATEGORY.GROWTH,
+      FEEDBACK_CATEGORY.WORK,
+      FEEDBACK_CATEGORY.LEADERSHIP,
+    ],
   },
   {
     name: "Youssef Eddibili",
@@ -16,15 +24,26 @@ export const Testimonials: Testimonial[] = [
     position: "Mobile Software Engineer",
     company: "Typology",
     photo: "youssef.jpg",
+    source: "Linkedin",
+    link: "https://www.linkedin.com/in/choubari/details/recommendations/",
+    date: "June 2022",
+    category: [
+      FEEDBACK_CATEGORY.GROWTH,
+      FEEDBACK_CATEGORY.WORK,
+      FEEDBACK_CATEGORY.LEADERSHIP,
+    ],
   },
   {
     name: "Mohamed Essaaidi",
     message:
       "I was very pleased to work with Kawtar during her term as the chair of the IEEE ENSIAS Student Branch as the Counsellor of this IEEE entity. This term witnessed amazing achievements thanks to Kawtar's leadership and wonderful interpersonal and managerial skills.\n I sincerely believe that Kawtar is an inspiring leader to engineering students and to girls and women in Morocco and worldwide.",
-    position:
-      "Professor | Inventor | IEEE Global Cities Alliance, MEA Chair | Director",
+    position: "Professor | Inventor | IEEE SIGHT Chair | Director",
     company: "EMSI",
     photo: "ProfEssaaidi.jpg",
+    source: "Linkedin",
+    link: "https://www.linkedin.com/in/choubari/details/recommendations/",
+    date: "April 2022",
+    category: [FEEDBACK_CATEGORY.LEADERSHIP, FEEDBACK_CATEGORY.COMMUNITY],
   },
   {
     name: "Ibrahim Mestadi",
@@ -33,21 +52,47 @@ export const Testimonials: Testimonial[] = [
     position: "Software Engineer",
     company: "Inyad",
     photo: "ibrahim.jpg",
+    date: "September 2023",
+    category: [
+      FEEDBACK_CATEGORY.LEADERSHIP,
+      FEEDBACK_CATEGORY.COMMUNITY,
+      FEEDBACK_CATEGORY.DESIGN,
+      FEEDBACK_CATEGORY.WORK,
+    ],
   },
   {
     name: "Aymane Helfa",
     message:
       "Kawtar is very talented in ux/ui design, she can manage the process of creation and the workflow of both ui and also ux design. I really recommend kawtar for your next project 👌🏼!",
-    position: "Figma community advocate & UX/UI Designer",
+    position: "UX/UI Designer",
     company: "Orange",
     photo: "aymane.jpg",
+    source: "Linkedin",
+    link: "https://www.linkedin.com/in/choubari/details/recommendations/",
+    date: "October 2021",
+    category: [FEEDBACK_CATEGORY.DESIGN, FEEDBACK_CATEGORY.WORK],
+  },
+  {
+    name: "Amine Kili",
+    message:
+      "I'm amazed by Kawtar's ability to understand and implement complex solutions, a skill she uses quite well to her benefit when making services and applications.",
+    position: "Co-Founder & CTO",
+    photo: "amine.jpg",
+    source: "Linkedin",
+    link: "https://www.linkedin.com/in/choubari/details/recommendations/",
+    date: "April 2021",
+    category: [FEEDBACK_CATEGORY.WORK, FEEDBACK_CATEGORY.GROWTH],
   },
   {
     name: "Soufiane Ezzaim",
     message:
       "Kawtar is a very highly motivated, diligent and smart individual. I thouroughly enjoyed my time working together.",
-    position: "Data, Advanced Analytics & AI",
-    company: "SAS",
+    position: "Regional Operations Manager",
+    company: "ExpertEye",
     photo: "soufiane.jpg",
+    source: "Linkedin",
+    link: "https://www.linkedin.com/in/choubari/details/recommendations/",
+    date: "April 2021",
+    category: [FEEDBACK_CATEGORY.LEADERSHIP, FEEDBACK_CATEGORY.GROWTH],
   },
 ];

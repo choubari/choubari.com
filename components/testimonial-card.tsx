@@ -1,10 +1,10 @@
-import { Testimonial as TestimonialCard } from "@/types";
+import { Feedback } from "@/types";
 import Image from "next/image";
 import React from "react";
-import { FaQuoteLeft } from "react-icons/fa";
+import { FaCalendar } from "react-icons/fa";
 
 interface TestimonialProps {
-  testimonial: TestimonialCard;
+  testimonial: Feedback;
 }
 
 const TestimonialCard: React.FC<TestimonialProps> = ({ testimonial }) => {

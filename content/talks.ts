@@ -1,13 +1,5 @@
 import { Talk } from "@/types";
 
-export const TALK_TYPES = [
-  "Conference",
-  "Workshop",
-  "Meetup",
-  "Webinar",
-  "Podcast",
-];
-
 export const Talks: Talk[] = [
   {
     featured: true,

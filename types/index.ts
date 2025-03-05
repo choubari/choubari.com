@@ -14,23 +14,14 @@ export type NavLink = {
   href: string;
 };
 
-// export type TalkType =
-//   | "Conference"
-//   | "Meetup"
-//   | "Podcast"
-//   | "Webinar"
-//   | "Workshop";
+export const TALK_TYPES = [
+  "Conference",
+  "Meetup",
+  "Podcast",
+  "Webinar",
+  "Workshop",
+] as const;
 
-// next.js can't export const in type module
-// export const TALK_TYPES = [
-//   "Conference",
-//   "Meetup",
-//   "Podcast",
-//   "Webinar",
-//   "Workshop",
-// ] as const;
-
-// todo: fix this, TALK_TYPES is considered as any below
 export type TalkType = (typeof TALK_TYPES)[number];
 
 export type Talk = {
@@ -74,12 +65,24 @@ export type CodingProject = {
   github?: string;
 };
 
-export type Testimonial = {
+export enum FEEDBACK_CATEGORY {
+  WORK = "Work & Expertise",
+  LEADERSHIP = "Leadership & Soft Skills",
+  DESIGN = "Design & Creativity",
+  COMMUNITY = "Community & Volunteering",
+  GROWTH = "Growth & Learning",
+}
+
+export type Feedback = {
   name: string;
   message: string;
   position: string;
   company?: string;
   photo: string;
+  date: string;
+  source?: SocialPlatform;
+  link?: string;
+  category: FEEDBACK_CATEGORY[];
 };
 
 export type Repo = {
@@ -112,7 +115,8 @@ export type SocialPlatform =
   | "Instagram"
   | "Facebook"
   | "TikTok"
-  | "Newsletter";
+  | "Newsletter"
+  | "WhatsApp";
 
 export type SocialLink = {
   label: SocialPlatform;

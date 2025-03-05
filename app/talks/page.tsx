@@ -1,8 +1,9 @@
 "use client";
 import TalkCard from "@/components/talk-card";
-import { Talks, TALK_TYPES } from "@/content/talks";
+import { Talks } from "@/content/talks";
 import { useState } from "react";
 import { compareDesc } from "date-fns";
+import { TALK_TYPES } from "@/types";
 
 export default function TalksPage() {
   const [activeType, setActiveType] = useState<string | null>(null);
