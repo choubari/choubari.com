@@ -17,7 +17,7 @@ const TalkCard: React.FC<TalkCardProps> = ({ talk }) => {
             style={{ objectFit: "cover" }}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 50vw"
             alt={talk.title}
-            // className="transition-all duration-300 ease-in-out transform group-hover:scale-110"
+            className="transition-all duration-300 ease-in-out transform group-hover:scale-110"
           />
         </div>
         <div className="absolute -bottom-5 right-2 rounded-full bg-accent p-2 text-dark font-medium">
