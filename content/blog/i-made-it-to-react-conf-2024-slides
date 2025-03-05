@@ -1,0 +1,22 @@
+---
+title: "I made it to React Conf 2024 Slides 🤯"
+description: Being featured at both Next.js Conf 2023 and now React Conf 2024 is truly incredible!
+image: /blog/react-conf-2024/react-conf-2024-slides.jpg
+published: true
+date: 2024-05-17
+---
+
+Last year, [I was featured at the Next.js Conf (2023)](/blog/nextjs-conf-announcing-nextjs14-and-a-surprise-for-me) in San Francisco, where I was recognized alongside other amazing community members and educators. Now, to be featured at React Conf (2024) in Las Vegas as well is truly incredible! 🎉
+
+### Watch my video reaction:
+
+<div className="flex justify-center">
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/qIPMB3BeCOI?si=pLaSMu3DbDWlIwVt" 
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen; web-share"
+  ></iframe>
+</div>
