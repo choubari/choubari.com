@@ -39,7 +39,7 @@ export default function TalksPage() {
             <span key={type}>
               <button
                 onClick={() => setActiveType(activeType === type ? null : type)}
-                className={`hover:underline cursor-pointer ${
+                className={`hover:underline ml-2 cursor-pointer ${
                   activeType === type ? "text-accent underline" : ""
                 }`}
               >

@@ -1,7 +1,7 @@
 import { Feedback } from "@/types";
 import Image from "next/image";
 import React from "react";
-import { FaCalendar } from "react-icons/fa";
+import SocialsIcon from "@/lib/socialsIconMap";
 
 interface TestimonialProps {
   testimonial: Feedback;
@@ -9,10 +9,25 @@ interface TestimonialProps {
 
 const TestimonialCard: React.FC<TestimonialProps> = ({ testimonial }) => {
   return (
-    <div className="rounded-lg overflow-hidden shadow-lg bg-lighter dark:bg-dark transition-all mb-4">
+    <div className="rounded-lg overflow-hidden shadow-lg bg-lighter dark:bg-dark transition-all mb-4 relative">
+      {testimonial.source &&
+        (testimonial.link ? (
+          <a
+            href={testimonial.link}
+            target="_blank"
+            rel="noreferrer"
+            className="absolute top-4 right-4 text-xl text-accent transition-colors"
+          >
+            {SocialsIcon[testimonial.source.toLowerCase()]()}
+          </a>
+        ) : (
+          <span className="absolute top-4 right-4 text-xl text-gray-500">
+            {SocialsIcon[testimonial.source.toLowerCase()]()}
+          </span>
+        ))}
       <figure className="max-w-screen-md mx-auto p-4">
         <blockquote>
-          <p className="text-lg font-medium text-darker dark:text-lighter">
+          <p className="text-lg font-normal pr-5 text-darker dark:text-lighter">
             &quot;
             {testimonial.message.split("\n").map((line, index, arr) => (
               <React.Fragment key={index}>
