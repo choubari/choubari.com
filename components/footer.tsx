@@ -24,13 +24,13 @@ export default function Footer() {
         strategy="lazyOnload"
       ></Script>
       <div className="mx-auto px-8 pt-5 lg:px-8 lg:max-w-7xl grid grid-cols-1 md:grid-cols-12 gap-8">
-        <div className="md:col-span-3 md:space-y-4">
+        <div className="md:col-span-5 md:space-y-4">
           <Link href="/" aria-label="Choubari's Home Page">
             <Logo />
           </Link>
         </div>
-        <div className="hidden md:block md:col-span-2 space-y-4"></div>
-        <div className="md:col-span-2 md:space-y-4">
+
+        <div className="md:col-span-3 md:space-y-4">
           <h2 className="font-serif text-xl font-bold mb-2">
             Links
             <span className="text-4xl leading-3 text-accent">.</span>

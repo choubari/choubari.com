@@ -17,7 +17,7 @@ const TalkCard: React.FC<TalkCardProps> = ({ talk }) => {
             style={{ objectFit: "cover" }}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 50vw"
             alt={talk.title}
-            className="transition-all duration-300 ease-in-out transform group-hover:scale-110"
+            // className="transition-all duration-300 ease-in-out transform group-hover:scale-110"
           />
         </div>
         <div className="absolute -bottom-5 right-2 rounded-full bg-accent p-2 text-dark font-medium">
@@ -58,64 +58,69 @@ const TalkCard: React.FC<TalkCardProps> = ({ talk }) => {
       </div>
 
       <div className="mt-auto">
-        <div className="flex flex-wrap gap-2 mt-2">
+        <div className="flex flex-wrap gap-3 mt-2">
           {talk.video && (
             <a
-              className="text-sm flex items-center gap-1 hover:underline"
+              className="text-sm flex items-center gap-1"
               href={talk.video}
               target="_blank"
               rel="noreferrer"
               title="Video Recording"
             >
-              <span>📽️ Video</span>
+              📽️
+              <span className="underline">Video</span>
             </a>
           )}
 
           {talk.slides && (
             <a
-              className="text-sm flex items-center gap-1 hover:underline"
+              className="text-sm flex items-center gap-1"
               href={talk.slides}
               target="_blank"
               rel="noreferrer"
               title="Slides"
             >
-              <span>📝 Slides</span>
+              📝
+              <span className="underline">Slides</span>
             </a>
           )}
 
           {talk.docs && (
             <a
-              className="text-sm flex items-center gap-1 hover:underline"
+              className="text-sm flex items-center gap-1"
               href={talk.docs}
               target="_blank"
               rel="noreferrer"
               title="Docs"
             >
-              <span>📖 Docs</span>
+              📖
+              <span className="underline">Docs</span>
             </a>
           )}
 
           {talk.demoCode && (
             <a
-              className="text-sm flex items-center gap-1 hover:underline"
+              className="text-sm flex items-center gap-1"
               href={talk.demoCode}
               target="_blank"
               rel="noreferrer"
               title="Open Source Code"
             >
-              <span>💻 Code</span>
+              💻
+              <span className="underline">Code</span>
             </a>
           )}
 
           {talk.demoLink && (
             <a
-              className="text-sm flex items-center gap-1 hover:underline"
+              className="text-sm flex items-center gap-1"
               href={talk.demoLink}
               target="_blank"
               rel="noreferrer"
               title="Demo Link"
             >
-              <span>🔗 Demo</span>
+              🔗
+              <span className="underline">Demo</span>
             </a>
           )}
         </div>
