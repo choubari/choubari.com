@@ -51,11 +51,9 @@ export default function TalksPage() {
         })}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-4 my-6">
-        {filteredTalks
-          .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
-          .map((talk, index) => (
-            <TalkCard key={index} talk={talk} />
-          ))}
+        {filteredTalks.map((talk, index) => (
+          <TalkCard key={index} talk={talk} />
+        ))}
       </div>
     </div>
   );
